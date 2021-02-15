@@ -6,5 +6,5 @@ The project is simple just requires a link to access the page and a device that 
 link to live site on GitHub Pages
 https://mnyando.github.io/
 
-copyright and license information
-Copywite ©2021 Martin Kenya , All rights reserved
+Copyright and license information
+Copyright ©2021 Martin Kenya , All rights reserved
