@@ -1,1 +1,33 @@
 
+#wrapperHeader{
+  position: relative;
+  background-image:url(images/header.png);
+}
+
+#header{
+  left: 50%;
+  margin-left: -500px;
+  background:url(images/logo.png) no-repeat;
+  width:1000px;
+  height:200px;
+}
+body {
+  background-color: whitesmoke;
+}
+
+h1 {
+
+  color: rgb(87, 87, 94);
+  text-align: center;
+}
+h2 {
+  color: rgb(134, 127, 224);
+  font-style: italic;
+  text-align: center;
+}
+p {
+  font-family: sans-serif;
+}
+ul {
+  line-height: 40px;
+}
