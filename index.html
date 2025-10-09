@@ -1,69 +1,496 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Martin Portfolio </title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Nyandigisi Mylles | Cybersecurity Professional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon: SVG for modern browsers and a fallback to /favicon.ico to avoid 404s -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lab-challenges">Lab Challenges</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <link href="martin.css" rel="stylesheet" type="text/css">
+    <section id="home" class="home-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <div class="profile-img-container">
+                        <img src="https://via.placeholder.com/300" alt="Martin Nyandigisi Mylles" class="profile-img rounded-circle">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Martin Nyandigisi Mylles</h1>
+                    <p class="lead mb-4">Cybersecurity & Information Systems Professional</p>
+                    <p class="mb-4">A proactive individual with a strong foundation in business management, information systems, and cybersecurity. Currently pursuing a bachelor's degree in information systems and technology with a concentration in Forensics in Cybersecurity.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#resume" class="btn btn-primary">View Resume</a>
+                        <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <style>
-    
-       
-    
-        #banner {
-          position: absolute;
-          top: px;
-          left: 0px;
-          right: 0px;
-          width: 100%;
-          height: 500px;
-          z-index: -1;
-        }
-        </style>
-        </head>
-        <body>
+    <section id="resume" class="resume-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Resume</h2>
+            
+            <div class="row mb-5">
+                <div class="col-lg-3">
+                    <h3 class="resume-section-title">Experience</h3>
+                </div>
+                <div class="col-lg-9">
+                    <div class="resume-item mb-4">
+                        <h4>Security Analyst Intern</h4>
+                        <h5>ICT Authority, Kenya</h5>
+                        <p class="text-muted mb-2">April 2025 – August 2025, Nairobi</p>
+                        <ul>
+                            <li>Monitored and filtered phishing, spam, and malicious emails using Spam Titan</li>
+                            <li>Conducted web application security scans with Acunetix</li>
+                            <li>Assisted in managing firewall policies and incident logging using Fortinet</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Volunteer Caregiver</h4>
+                        <h5>First Love International, Nairobi, Kenya</h5>
+                        <p class="text-muted mb-2">January 2024 – April 2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-lg-3">
+                    <h3 class="resume-section-title">Education</h3>
+                </div>
+                <div class="col-lg-9">
+                    <div class="resume-item mb-4">
+                        <h4>Bachelor's degree in Information Systems and Technology</h4>
+                        <h5>Concentration in Forensics in Cybersecurity</h5>
+                        <p class="text-muted mb-2">United States International University – Africa • Sep 2025</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Diploma in Business Management</h4>
+                        <p class="text-muted mb-2">Strathmore University • August 2021</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-lg-3">
+                    <h3 class="resume-section-title">Certifications</h3>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Google Cybersecurity Certificate</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">IBM Granite Optimization</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">MITRE ATT&CK v13</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cisco Ethical Hacker</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3">
+                    <h3 class="resume-section-title">Skills</h3>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <h5>Technical Skills</h5>
+                            <ul>
+                                <li>Android Programming</li>
+                                <li>Django Web Framework</li>
+                                <li>Backend and Cloud Integration</li>
+                                <li>Web Application Security</li>
+                                <li>Malware Analysis</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h5>Cybersecurity</h5>
+                            <ul>
+                                <li>Cybersecurity Fundamentals</li>
+                                <li>Cybersecurity Frameworks</li>
+                                <li>Forensics in Cybersecurity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-          <img id="banner" src="ben.jpg" alt="Banner Image"/>
-        </body>
-    
-    
-  </head>
- 
-  <body>
-    <div style = "position:absolute; left:80px; top:600px">
-    <h1>Hello Good people</h1>
-    
-    <p>My Name is Martin Mylles I have always had a passion on technology especially software and im really enjoying moringa school as a whole.This is basically my portfolio of who i really am as an apiring adult learning new things everyday as things go on .With this site i aim to sortly desribe myself and introduce everyone to me and youll be entiled to your opinion how you see me.</p>
-    
-    <br>
-    <br>  
-    <br>
-    <br>
-  
-  <img style="float: right; margin: 0px 0px 15px 15px;" src="IMG_20210212_170020.jpg" width="350" />
-  
-  <p2>On the right is a picture of me basically a normal picture of myself.</p2>
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lab-challenges">Lab Challenges</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <p2>I have created a gew other projects but they are incomplete and i am thinking of working on them later </p2>
+    <section id="home" class="home-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <div class="profile-img-container">
+                        <img src="https://via.placeholder.com/300" alt="Martin Nyandigisi Mylles" class="profile-img rounded-circle">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Martin Nyandigisi Mylles</h1>
+                    <p class="lead mb-4">Cybersecurity & Information Systems Professional</p>
+                    <p class="mb-4">A proactive individual with a strong foundation in business management, information systems, and cybersecurity. Currently pursuing a bachelor's degree in information systems and technology with a concentration in Forensics in Cybersecurity.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#resume" class="btn btn-primary">View Resume</a>
+                        <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<br> 
-  <p> I have made this site using:</p>
-  <ul>
-    <li>html</li>
-    <li>Css</li>
-    
-  </ul>
+    <section id="resume" class="resume-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Resume</h2>
+            
+            <div class="row mb-5">
+                <div class="col-lg-3">
+                    <h3 class="resume-section-title">Experience</h3>
+                </div>
+                <div class="col-lg-9">
+                    <div class="resume-item mb-4">
+                        <h4>Security Analyst Intern</h4>
+                        <h5>ICT Authority, Kenya</h5>
+                        <p class="text-muted mb-2">April 2025 – August 2025, Nairobi</p>
+                        <ul>
+                            <li>Monitored and filtered phishing, spam, and malicious emails using Spam Titan</li>
+                            <li>Conducted web application security scans with Acunetix</li>
+                            <li>Assisted in managing firewall policies and incident logging using Fortinet</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Volunteer Caregiver</h4>
+                        <h5>First Love International, Nairobi, Kenya</h5>
+                        <p class="text-muted mb-2">January 2024 – April 2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-lg-3">
+                    <h3 class="resume-section-title">Education</h3>
+                </div>
+                <div class="col-lg-9">
+                    <div class="resume-item mb-4">
+                        <h4>Bachelor's degree in Information Systems and Technology</h4>
+                        <h5>Concentration in Forensics in Cybersecurity</h5>
+                        <p class="text-muted mb-2">United States International University – Africa • Sep 2025</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Diploma in Business Management</h4>
+                        <p class="text-muted mb-2">Strathmore University • August 2021</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-lg-3">
+                    <h3 class="resume-section-title">Certifications</h3>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Google Cybersecurity Certificate</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">IBM Granite Optimization</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">MITRE ATT&CK v13</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cisco Ethical Hacker</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3">
+                    <h3 class="resume-section-title">Skills</h3>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <h5>Technical Skills</h5>
+                            <ul>
+                                <li>Android Programming</li>
+                                <li>Django Web Framework</li>
+                                <li>Backend and Cloud Integration</li>
+                                <li>Web Application Security</li>
+                                <li>Malware Analysis</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h5>Cybersecurity</h5>
+                            <ul>
+                                <li>Cybersecurity Fundamentals</li>
+                                <li>Cybersecurity Frameworks</li>
+                                <li>Forensics in Cybersecurity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 project-card">
+                        <div class="card-body">
+                            <h4 class="card-title">Secure Mobile Banking App</h4>
+                            <p class="card-text">Developed a secure Android banking application with encryption and multi-factor authentication features.</p>
+                            <h6>Technologies Used:</h6>
+                            <ul>
+                                <li>Android Studio</li>
+                                <li>Java</li>
+                                <li>Firebase Authentication</li>
+                                <li>Encryption Algorithms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 project-card">
+                        <div class="card-body">
+                            <h4 class="card-title">Vulnerability Assessment Tool</h4>
+                            <p class="card-text">Created a web application for automated vulnerability scanning and reporting using Django framework.</p>
+                            <h6>Technologies Used:</h6>
+                            <ul>
+                                <li>Django</li>
+                                <li>Python</li>
+                                <li>SQLite</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 project-card">
+                        <div class="card-body">
+                            <h4 class="card-title">Network Security Monitoring Dashboard</h4>
+                            <p class="card-text">Built a real-time dashboard for monitoring network security events and firewall activities.</p>
+                            <h6>Technologies Used:</h6>
+                            <ul>
+                                <li>React.js</li>
+                                <li>Node.js</li>
+                                <li>WebSocket</li>
+                                <li>Chart.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="lab-challenges" class="lab-challenges-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Lab Challenges</h2>
+            
+            <div class="lab-challenge mb-5">
+                <h3>Phishing Email Analysis</h3>
+                <p class="text-muted mb-3">Analyze a suspicious email to determine if it's a phishing attempt and identify indicators of compromise.</p>
+                
+                <h5>Approach:</h5>
+                <ul class="mb-3">
+                    <li>Examined email headers for spoofing indicators</li>
+                    <li>Analyzed embedded links and attachments</li>
+                    <li>Checked sender reputation and domain authenticity</li>
+                </ul>
+                
+                <h5>Tools Used:</h5>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge bg-secondary">Spam Titan</span>
+                    <span class="badge bg-secondary">Wireshark</span>
+                    <span class="badge bg-secondary">VirusTotal</span>
+                </div>
+                
+                <h5>Key Lessons:</h5>
+                <ul>
+                    <li>Importance of email header analysis in identifying spoofed emails</li>
+                    <li>How to safely analyze suspicious attachments</li>
+                    <li>Techniques for educating users about phishing indicators</li>
+                </ul>
+            </div>
+            
+            <div class="lab-challenge">
+                <h3>Web Application Vulnerability Assessment</h3>
+                <p class="text-muted mb-3">Perform a security assessment of a web application to identify and document vulnerabilities.</p>
+                
+                <h5>Approach:</h5>
+                <ul class="mb-3">
+                    <li>Conducted automated scanning using Acunetix</li>
+                    <li>Performed manual testing for OWASP Top 10 vulnerabilities</li>
+                    <li>Documented findings with severity ratings</li>
+                </ul>
+                
+                <h5>Tools Used:</h5>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge bg-secondary">Acunetix</span>
+                    <span class="badge bg-secondary">Burp Suite</span>
+                    <span class="badge bg-secondary">Nmap</span>
+                </div>
+                
+                <h5>Key Lessons:</h5>
+                <ul>
+                    <li>Understanding the limitations of automated scanning tools</li>
+                    <li>Importance of manual testing for complex vulnerabilities</li>
+                    <li>Effective communication of technical findings</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-  <head>
-    <h2>ABOUT ME</2>
-  </head>
-</div>   
-    
-  </body>
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Contact</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card contact-card">
+                        <div class="card-body p-4">
+                            <div class="row text-center">
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope fa-2x mb-3"></i>
+                                        <h5>Email</h5>
+                                        <p>matonyando@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone fa-2x mb-3"></i>
+                                        <h5>Phone</h5>
+                                        <p>0742846700</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="contact-item">
+                                        <i class="fas fa-map-marker-alt fa-2x mb-3"></i>
+                                        <h5>Location</h5>
+                                        <p>Nairobi, Kenya</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div class="text-center">
+                                <h5 class="mb-3">Professional Profiles</h5>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="https://linkedin.com/in/martin-nyandigisi-mylles-0738b02b6" class="social-link">
+                                        <i class="fab fa-linkedin fa-2x"></i>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-github fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2023 Martin Nyandigisi Mylles. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
-
-    <p> That said it doesnt really mean i wouldnt stay indoos to code or learn something online it just shows that i like to balance between them both.  </p>
-    <img src="IMG_20210212_170020.jpg" alt="My image">
-  </body>
-</html>
+>>>>>>> 2ebaa91 (Initial commit: portfolio site)
