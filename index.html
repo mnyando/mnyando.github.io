@@ -12,220 +12,175 @@
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
 
-            <a class="navbar-brand" href="#">Portfolio Website</a>
+        <a class="navbar-brand" href="#">Portfolio</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#lab-challenges">Lab Challenges</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lab-challenges">Lab Challenges</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </nav>
 
-    <!-- HOME -->
-    <section id="home" class="home-section d-flex align-items-center">
+    </div>
+</nav>
 
-        <div class="container">
+<!-- HOME -->
+<section id="home" class="home-section">
 
-            <div class="row align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
 
-                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <!-- IMAGE -->
+            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                <img src="Martin_Image (1).png"
+                     alt="Martin Mylles"
+                     class="profile-img">
+            </div>
 
-                    <div class="profile-img-container">
-                        <img src="Martin_Image (1).png"
-                             alt="Martin Nyandigisi Mylles"
-                             class="profile-img">
-                    </div>
+            <!-- TEXT -->
+            <div class="col-lg-8">
 
-                </div>
+                <h1 class="display-4 fw-bold">Martin Nyandigisi Mylles</h1>
 
-                <div class="col-lg-8">
+                <p class="lead">
+                    Cybersecurity & Information Systems Professional
+                </p>
 
-                    <h1 class="display-4 fw-bold">
-                        Martin Nyandigisi Mylles
-                    </h1>
+                <p>
+                    Entry-level cybersecurity and IT professional with experience in SIEM, vulnerability assessment,
+                    network security, and IT support operations.
+                </p>
 
-                    <p class="lead mb-4">
-                        Cybersecurity & Information Systems Professional
-                    </p>
-
-                    <p class="mb-4">
-                        Entry-level cybersecurity and IT professional with a Bachelor’s degree in Information Systems and Technology and a concentration in Forensic Information Technology and Cybercrime. Experienced in IT support, infrastructure operations, vulnerability assessment, log analysis, and hands-on cybersecurity labs focused on network security and threat detection.
-                    </p>
-
-                    <div class="d-flex flex-wrap gap-2">
-                        <a href="#resume" class="btn btn-primary">View Resume</a>
-                        <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
-                    </div>
-
+                <div class="d-flex gap-2 flex-wrap">
+                    <a href="#resume" class="btn btn-primary">View Resume</a>
+                    <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
                 </div>
 
             </div>
 
         </div>
+    </div>
 
-    </section>
+</section>
 
-    <!-- RESUME -->
-    <section id="resume" class="resume-section py-5 bg-light">
+<!-- RESUME -->
+<section id="resume" class="section-box">
 
-        <div class="container">
+    <div class="container">
 
-            <h2 class="section-title text-center mb-5">
-                Resume
-            </h2>
+        <h2 class="section-title">Resume</h2>
 
-            <div class="row mb-5">
+        <div class="resume-item mb-4">
+            <h4>IT Support Intern</h4>
+            <h6>ICED – International Centre for Evaluation and Development</h6>
+            <p class="text-muted">April 2026 – Present</p>
+        </div>
 
-                <div class="col-lg-3">
-                    <h3 class="resume-section-title">Experience</h3>
+        <div class="resume-item mb-4">
+            <h4>Network Administrator (Part-Time)</h4>
+            <h6>Power Innovations</h6>
+            <p class="text-muted">Oct 2025 – Feb 2026</p>
+        </div>
+
+        <div class="resume-item">
+            <h4>Information Security Intern</h4>
+            <h6>ICT Authority Kenya</h6>
+            <p class="text-muted">May 2025 – July 2025</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section-box">
+
+    <div class="container">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+                <div class="project-card">
+                    <h5>School Transport System</h5>
+                    <p>Android + Firebase safety tracking system.</p>
                 </div>
+            </div>
 
-                <div class="col-lg-9">
-
-                    <div class="resume-item mb-4">
-                        <h4>IT Support Intern</h4>
-                        <h5>ICED – International Centre for Evaluation and Development</h5>
-                        <p class="text-muted mb-2">April 2026 – Present, Nairobi</p>
-                        <ul>
-                            <li>Support ICT operations and troubleshooting</li>
-                            <li>Server monitoring and maintenance</li>
-                            <li>Network and endpoint support</li>
-                            <li>User IT support services</li>
-                        </ul>
-                    </div>
-
-                    <div class="resume-item mb-4">
-                        <h4>Network Administrator (Part-Time)</h4>
-                        <h5>Power Innovations</h5>
-                        <p class="text-muted mb-2">October 2025 – February 2026, Nairobi</p>
-                        <ul>
-                            <li>Server and network maintenance</li>
-                            <li>POS troubleshooting</li>
-                            <li>Log analysis and system diagnosis</li>
-                            <li>System patching and updates</li>
-                        </ul>
-                    </div>
-
-                    <div class="resume-item">
-                        <h4>Information Security Intern</h4>
-                        <h5>ICT Authority Kenya</h5>
-                        <p class="text-muted mb-2">May 2025 – July 2025, Nairobi</p>
-                        <ul>
-                            <li>Security monitoring and analysis</li>
-                            <li>Vulnerability scanning</li>
-                            <li>Incident reporting</li>
-                            <li>Security tools usage (SIEM, Acunetix)</li>
-                        </ul>
-                    </div>
-
+            <div class="col-md-4 mb-3">
+                <div class="project-card">
+                    <h5>Cybersecurity Labs</h5>
+                    <p>Nmap, Wireshark, Linux enumeration.</p>
                 </div>
+            </div>
 
+            <div class="col-md-4 mb-3">
+                <div class="project-card">
+                    <h5>SIEM Monitoring</h5>
+                    <p>Threat detection and log analysis.</p>
+                </div>
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="projects-section py-5">
+</section>
 
-        <div class="container">
+<!-- LABS -->
+<section id="lab-challenges" class="section-box">
 
-            <h2 class="section-title text-center mb-5">
-                Projects
-            </h2>
+    <div class="container">
 
-            <div class="row">
+        <h2 class="section-title">Lab Challenges</h2>
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 project-card">
-                        <div class="card-body">
-                            <h4>School Transport Safety System</h4>
-                            <p>Android + Firebase tracking system for student safety.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 project-card">
-                        <div class="card-body">
-                            <h4>Cybersecurity Labs</h4>
-                            <p>Nmap, Wireshark, Linux enumeration exercises.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 project-card">
-                        <div class="card-body">
-                            <h4>Security Monitoring</h4>
-                            <p>SIEM-based incident tracking and analysis.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+        <div class="resume-item mb-3">
+            <h5>Phishing Email Analysis</h5>
+            <p>Analyzed headers, links, and attachments for threats.</p>
         </div>
 
-    </section>
-
-    <!-- LAB CHALLENGES -->
-    <section id="lab-challenges" class="lab-challenges-section py-5 bg-light">
-
-        <div class="container">
-
-            <h2 class="section-title text-center mb-5">
-                Lab Challenges
-            </h2>
-
-            <h4>Phishing Email Analysis</h4>
-            <p>Analyzed email headers, links, and attachments for threats.</p>
-
-            <h4 class="mt-4">Web Application Vulnerability Assessment</h4>
-            <p>Performed scanning and manual vulnerability testing.</p>
-
+        <div class="resume-item">
+            <h5>Web Vulnerability Assessment</h5>
+            <p>Performed scanning and manual testing for vulnerabilities.</p>
         </div>
 
-    </section>
+    </div>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact-section py-5">
+</section>
 
-        <div class="container text-center">
+<!-- CONTACT -->
+<section id="contact" class="section-box text-center">
 
-            <h2 class="section-title mb-5">Contact</h2>
+    <div class="container">
 
-            <p>Email: matonyando@gmail.com</p>
-            <p>Phone: +254 742 846 700</p>
-            <p>Location: Nairobi, Kenya</p>
+        <h2 class="section-title">Contact</h2>
 
-        </div>
+        <p>Email: matonyando@gmail.com</p>
+        <p>Phone: +254 742 846 700</p>
+        <p>Location: Nairobi, Kenya</p>
 
-    </section>
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white py-4 text-center">
-        <p class="mb-0">&copy; 2026 Martin Nyandigisi Mylles</p>
-    </footer>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>&copy; 2026 Martin Nyandigisi Mylles</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
