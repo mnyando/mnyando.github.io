@@ -1,6 +1,7 @@
 body {
   background-color: whitesmoke;
   padding-top: 70px;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -19,18 +20,45 @@ p {
 }
 
 ul {
-  line-height: 40px;
+  line-height: 1.8;
 }
 
-/* PROFILE IMAGE FIX */
-.profile-img {
-  width: 260px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-/* NAV SCROLL EFFECT */
 .navbar-scrolled {
   background-color: #111 !important;
+  transition: 0.3s ease;
+}
+
+.home-section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.profile-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ddd;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.project-card {
+  height: 100%;
 }
