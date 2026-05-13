@@ -1,32 +1,36 @@
-#wrapperHeader{
-  position: relative;
-  background-image:url(images/header.png);
-}
-
-#header{
-  left: 50%;
-  margin-left: -500px;
-  background:url(images/logo.png) no-repeat;
-  width:1000px;
-  height:200px;
-}
 body {
   background-color: whitesmoke;
+  padding-top: 70px;
 }
 
 h1 {
-
   color: rgb(87, 87, 94);
   text-align: center;
 }
+
 h2 {
   color: rgb(134, 127, 224);
   font-style: italic;
   text-align: center;
 }
+
 p {
   font-family: sans-serif;
 }
+
 ul {
   line-height: 40px;
+}
+
+/* PROFILE IMAGE FIX */
+.profile-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* NAV SCROLL EFFECT */
+.navbar-scrolled {
+  background-color: #111 !important;
 }
