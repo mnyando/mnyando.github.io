@@ -4,7 +4,6 @@ body {
   font-family: sans-serif;
 }
 
-/* HEADINGS */
 h1 {
   color: rgb(87, 87, 94);
   text-align: center;
@@ -24,75 +23,49 @@ ul {
   line-height: 1.8;
 }
 
-/* NAVBAR SCROLL EFFECT */
+/* NAVBAR SCROLL */
 .navbar-scrolled {
   background-color: #111 !important;
   transition: 0.3s ease;
 }
 
-/* HOME SECTION LAYOUT */
+/* HOME SECTION */
 .home-section {
   min-height: 90vh;
   display: flex;
   align-items: center;
 }
 
-/* PROFILE IMAGE CONTAINER (LEFT SIDE ALIGNMENT) */
+/* IMAGE CONTAINER */
 .profile-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* PROFILE IMAGE (SMALL + CIRCULAR + LEFT SIDE) */
+/* PROFILE IMAGE (LARGER THAN BEFORE) */
 .profile-img {
-  width: 180px;
-  height: 180px;
+  width: 280px;
+  height: 280px;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #ddd;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* SECTION TITLES */
+/* SECTION TITLE */
 .section-title {
   font-weight: bold;
   margin-bottom: 30px;
-}
-
-/* RESUME ITEMS */
-.resume-item {
-  margin-bottom: 20px;
 }
 
 /* CARDS */
 .card {
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* PROJECT CARDS */
+/* PROJECT CARD */
 .project-card {
   height: 100%;
-}
-
-/* CONTACT SECTION */
-.contact-card {
-  border: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* CONTACT ITEMS */
-.contact-item i {
-  color: #1e90ff;
-}
-
-/* FOOTER */
-footer {
-  font-size: 14px;
 }
