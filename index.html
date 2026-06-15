@@ -3,184 +3,520 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin Nyandigisi Mylles | Cybersecurity Professional</title>
+    <title>Martin Nyandigisi Mylles | Cybersecurity Analyst Portfolio</title>
+    <meta name="description" content="Professional portfolio of Martin Nyandigisi Mylles, Cybersecurity Analyst specializing in SOC Operations, Threat Detection, Security Monitoring, and Incident Response.">
 
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="martin.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="main-nav">
     <div class="container">
-
-        <a class="navbar-brand" href="#">Portfolio</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <a class="navbar-brand" href="#home" id="nav-logo">
+            <i class="fa-solid fa-shield-halved text-info"></i> Martin Mylles
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="nav-toggle-btn">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#lab-challenges">Lab Challenges</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#home" id="nav-link-home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills" id="nav-link-skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resume" id="nav-link-resume">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education" id="nav-link-education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certifications" id="nav-link-certs">Certifications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects" id="nav-link-projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lab-challenges" id="nav-link-labs">Lab Challenges</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact" id="nav-link-contact">Contact</a></li>
             </ul>
         </div>
-
     </div>
 </nav>
 
-<!-- HOME -->
+<!-- HOME / HERO SECTION -->
 <section id="home" class="home-section">
-
     <div class="container">
         <div class="row align-items-center">
-
-            <!-- IMAGE -->
-            <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                <img src="Martin_Image (1).png"
-                     alt="Martin Mylles"
-                     class="profile-img">
+            <!-- PROFILE IMAGE -->
+            <div class="col-lg-4 text-center mb-4 mb-lg-0 profile-img-container">
+                <img src="Martin_Image (1).png" alt="Martin Nyandigisi Mylles Profile Picture" class="profile-img" id="img-profile">
             </div>
-
-            <!-- TEXT -->
-            <div class="col-lg-8">
-
+            <!-- HERO TEXT -->
+            <div class="col-lg-8" id="hero-text-content">
                 <h1 class="display-4 fw-bold">Martin Nyandigisi Mylles</h1>
-
-                <p class="lead">
-                    Cybersecurity & Information Systems Professional
+                <p class="lead text-uppercase" id="professional-title">
+                    Cybersecurity Analyst | SOC Operations | Threat Detection & Incident Response
                 </p>
-
-                <p>
-                    Entry-level cybersecurity and IT professional with experience in SIEM, vulnerability assessment,
-                    network security, and IT support operations.
+                <p class="my-4" id="professional-summary">
+                    Entry-level cybersecurity professional with a degree in Information Systems and Technology and a concentration in Forensic Information Technology and Cybercrime. Currently supporting ICT operations at ICED and bringing additional experience in network administration and infrastructure support. Practical experience in security monitoring, vulnerability assessment, incident documentation, IT support, and network administration through roles at ICED, ICT Authority Kenya, and Power Innovations.
                 </p>
-
-                <div class="d-flex gap-2 flex-wrap">
-                    <a href="#resume" class="btn btn-primary">View Resume</a>
-                    <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+                <div class="d-flex gap-3 flex-wrap" id="hero-cta-buttons">
+                    <a href="#resume" class="btn btn-primary" id="btn-hero-resume">View Experience</a>
+                    <a href="#contact" class="btn btn-outline-primary text-light" id="btn-hero-contact">Contact Me</a>
                 </div>
-
             </div>
-
         </div>
     </div>
-
 </section>
 
-<!-- RESUME -->
+<!-- CORE SKILLS SECTION -->
+<section id="skills" class="section-box">
+    <div class="container text-center">
+        <h2 class="section-title" id="title-skills">Core Skills</h2>
+        <div class="row text-start mt-4 g-4" id="skills-grid">
+            <!-- Threat Detection & Monitoring -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skills-card" id="skills-card-threat">
+                    <h5><i class="fa-solid fa-crosshairs"></i> Threat Detection & Monitoring</h5>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge">FortiSIEM</span>
+                        <span class="skill-badge">Splunk</span>
+                        <span class="skill-badge">Wazuh</span>
+                        <span class="skill-badge">Log Analysis</span>
+                        <span class="skill-badge">Alert Triage</span>
+                        <span class="skill-badge">Wireshark</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Vulnerability Management -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skills-card" id="skills-card-vuln">
+                    <h5><i class="fa-solid fa-bug"></i> Vulnerability Management</h5>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge">Acunetix</span>
+                        <span class="skill-badge">Vulnerability Assessment</span>
+                        <span class="skill-badge">Remediation Tracking</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Network Security -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skills-card" id="skills-card-net">
+                    <h5><i class="fa-solid fa-network-wired"></i> Network Security</h5>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge">Firewalls</span>
+                        <span class="skill-badge">VPN Fundamentals</span>
+                        <span class="skill-badge">Network Segmentation</span>
+                        <span class="skill-badge">Traffic Analysis</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Incident Response & Forensics -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skills-card" id="skills-card-ir">
+                    <h5><i class="fa-solid fa-shield-virus"></i> Incident Response & Forensics</h5>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge">Incident Documentation</span>
+                        <span class="skill-badge">Autopsy</span>
+                        <span class="skill-badge">FTK Imager</span>
+                        <span class="skill-badge">Email Security</span>
+                        <span class="skill-badge">Phishing Analysis</span>
+                        <span class="skill-badge">SpamTitan</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Systems & Administration -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skills-card" id="skills-card-sys">
+                    <h5><i class="fa-solid fa-terminal"></i> Systems & Administration</h5>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge">Windows</span>
+                        <span class="skill-badge">Linux</span>
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">PHP</span>
+                        <span class="skill-badge">HTML/CSS</span>
+                        <span class="skill-badge">Android Development</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Frameworks -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skills-card" id="skills-card-frameworks">
+                    <h5><i class="fa-solid fa-diagram-project"></i> Frameworks</h5>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge">MITRE ATT&CK</span>
+                        <span class="skill-badge">ISO/IEC 27001</span>
+                        <span class="skill-badge">Ethical Hacking Methodology</span>
+                        <span class="skill-badge">AI Security & Risk</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WORK EXPERIENCE SECTION -->
 <section id="resume" class="section-box">
-
     <div class="container">
+        <h2 class="section-title d-block text-center" id="title-experience">Work Experience</h2>
+        <div class="mt-4" id="experience-list">
+            <!-- Job 1 -->
+            <div class="resume-item" id="exp-item-iced">
+                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <div>
+                        <h4 class="fw-bold">IT Support Intern</h4>
+                        <h6 class="text-info">ICED – International Centre for Evaluation and Development</h6>
+                    </div>
+                    <span class="badge bg-secondary p-2">April 2026 – Present</span>
+                </div>
+                <ul class="resume-list mt-3">
+                    <li>Support ICT operations</li>
+                    <li>Hardware configuration</li>
+                    <li>Asset inventory management</li>
+                    <li>Network monitoring</li>
+                    <li>LAN and Wi-Fi troubleshooting</li>
+                    <li>Server monitoring</li>
+                    <li>Backup support</li>
+                    <li>Antivirus and patch management</li>
+                    <li>Security incident reporting</li>
+                    <li>Microsoft Office support</li>
+                    <li>Data cleaning and Excel reporting</li>
+                </ul>
+            </div>
 
-        <h2 class="section-title">Resume</h2>
+            <!-- Job 2 -->
+            <div class="resume-item" id="exp-item-power">
+                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <div>
+                        <h4 class="fw-bold">Network Administrator (Part-Time)</h4>
+                        <h6 class="text-info">Power Innovations</h6>
+                    </div>
+                    <span class="badge bg-secondary p-2">October 2025 – February 2026</span>
+                </div>
+                <ul class="resume-list mt-3">
+                    <li>Monitored and maintained company server infrastructure</li>
+                    <li>Ensured stable performance and uptime</li>
+                    <li>Maintained endpoint security</li>
+                    <li>Managed patch deployment</li>
+                    <li>Antivirus updates</li>
+                    <li>Troubleshot network issues</li>
+                    <li>Supported POS systems</li>
+                    <li>Retrieved and analyzed server-side error logs</li>
+                </ul>
+            </div>
 
-        <div class="resume-item mb-4">
-            <h4>IT Support Intern</h4>
-            <h6>ICED – International Centre for Evaluation and Development</h6>
-            <p class="text-muted">April 2026 – Present</p>
+            <!-- Job 3 -->
+            <div class="resume-item" id="exp-item-ict">
+                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <div>
+                        <h4 class="fw-bold">Information Security Intern</h4>
+                        <h6 class="text-info">ICT Authority Kenya</h6>
+                    </div>
+                    <span class="badge bg-secondary p-2">May 2025 – July 2025</span>
+                </div>
+                <ul class="resume-list mt-3">
+                    <li>Vulnerability scanning using Acunetix</li>
+                    <li>Security monitoring using Fortinet tools</li>
+                    <li>Email threat filtering using SpamTitan</li>
+                    <li>Incident documentation</li>
+                    <li>Security event monitoring</li>
+                    <li>Ticket management</li>
+                    <li>Network troubleshooting support</li>
+                    <li>Workstation configuration</li>
+                </ul>
+            </div>
         </div>
-
-        <div class="resume-item mb-4">
-            <h4>Network Administrator (Part-Time)</h4>
-            <h6>Power Innovations</h6>
-            <p class="text-muted">Oct 2025 – Feb 2026</p>
-        </div>
-
-        <div class="resume-item">
-            <h4>Information Security Intern</h4>
-            <h6>ICT Authority Kenya</h6>
-            <p class="text-muted">May 2025 – July 2025</p>
-        </div>
-
     </div>
-
 </section>
 
-<!-- PROJECTS -->
+<!-- EDUCATION SECTION -->
+<section id="education" class="section-box">
+    <div class="container text-center">
+        <h2 class="section-title" id="title-education">Education</h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8 text-start">
+                <div class="edu-card d-flex align-items-start gap-3" id="edu-card-usiu">
+                    <div class="edu-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h4 class="fw-bold">Bachelor of Science in Information Systems & Technology</h4>
+                        <h6 class="text-info">United States International University – Africa</h6>
+                        <p class="mb-2 text-muted"><strong>Concentration:</strong> Forensic Information Technology & Cybercrime</p>
+                        <span class="badge bg-light text-dark border">Graduated: September 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS SECTION -->
+<section id="certifications" class="section-box">
+    <div class="container text-center">
+        <h2 class="section-title" id="title-certs">Certifications</h2>
+        <div class="row mt-4 g-3 justify-content-center text-start" id="certs-grid">
+            <!-- Cert 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cert-card d-flex align-items-center gap-3" id="cert-hcia">
+                    <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">HCIA-Security V4.0</h6>
+                        <small class="text-muted">Huawei</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Cert 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cert-card d-flex align-items-center gap-3" id="cert-cybershujaa">
+                    <div class="cert-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Security Analyst</h6>
+                        <small class="text-muted">CyberShujaa</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Cert 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cert-card d-flex align-items-center gap-3" id="cert-caisr">
+                    <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Certified Artificial Intelligence Security & Risk (CAISR)</h6>
+                        <small class="text-muted">CAISR</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Cert 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cert-card d-flex align-items-center gap-3" id="cert-google">
+                    <div class="cert-icon"><i class="fa-brands fa-google"></i></div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Google Cybersecurity Professional Certificate</h6>
+                        <small class="text-muted">Google</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Cert 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cert-card d-flex align-items-center gap-3" id="cert-mitre">
+                    <div class="cert-icon"><i class="fa-solid fa-sitemap"></i></div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Foundations of Operationalizing MITRE ATT&CK v13</h6>
+                        <small class="text-muted">MITRE ATT&CK</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Cert 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cert-card d-flex align-items-center gap-3" id="cert-cisco">
+                    <div class="cert-icon"><i class="fa-solid fa-mask"></i></div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Cisco Ethical Hacker</h6>
+                        <small class="text-muted">Cisco</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Cert 7 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="cert-card d-flex align-items-center gap-3" id="cert-ibm">
+                    <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">IBM Granite Code Generation & Optimization</h6>
+                        <small class="text-muted">IBM</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
 <section id="projects" class="section-box">
-
-    <div class="container">
-
-        <h2 class="section-title">Projects</h2>
-
-        <div class="row">
-
-            <div class="col-md-4 mb-3">
-                <div class="project-card">
-                    <h5>School Transport System</h5>
-                    <p>Android + Firebase safety tracking system.</p>
+    <div class="container text-center">
+        <h2 class="section-title" id="title-projects">Projects</h2>
+        <div class="row text-start mt-4 g-4" id="projects-grid">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card" id="project-card-transport">
+                    <h5 class="fw-bold"><i class="fa-solid fa-bus"></i> Online School Transport Child Safety Monitoring and Alert System</h5>
+                    <p>Developed an Android and Firebase-based transport safety platform enabling schools and parents to monitor student pickup and drop-off activities in real time.</p>
+                    <div class="project-tech">
+                        <span class="badge bg-secondary">Android Studio</span>
+                        <span class="badge bg-secondary">Java</span>
+                        <span class="badge bg-secondary">Firebase Authentication</span>
+                        <span class="badge bg-secondary">Firestore</span>
+                        <span class="badge bg-secondary">Firebase Cloud Messaging</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-md-4 mb-3">
-                <div class="project-card">
-                    <h5>Cybersecurity Labs</h5>
-                    <p>Nmap, Wireshark, Linux enumeration.</p>
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card" id="project-card-labs">
+                    <h5 class="fw-bold"><i class="fa-solid fa-laptop-code"></i> Cybersecurity Labs & Assessments</h5>
+                    <p>Completed practical security labs through Hack The Box, TryHackMe, CyberShujaa, and self-guided exercises covering enumeration, vulnerability assessment, privilege escalation, and threat analysis.</p>
+                    <div class="project-tech">
+                        <span class="badge bg-secondary">Nmap</span>
+                        <span class="badge bg-secondary">Wireshark</span>
+                        <span class="badge bg-secondary">Linux</span>
+                        <span class="badge bg-secondary">SMB Enumeration</span>
+                        <span class="badge bg-secondary">SSH</span>
+                        <span class="badge bg-secondary">Burp Suite</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-md-4 mb-3">
-                <div class="project-card">
-                    <h5>SIEM Monitoring</h5>
-                    <p>Threat detection and log analysis.</p>
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card" id="project-card-monitoring">
+                    <h5 class="fw-bold"><i class="fa-solid fa-desktop"></i> Security Monitoring & Threat Analysis</h5>
+                    <p>Performed SIEM monitoring, log analysis, alert investigation, and incident documentation using security monitoring tools and simulated security environments.</p>
+                    <div class="project-tech">
+                        <span class="badge bg-secondary">FortiSIEM</span>
+                        <span class="badge bg-secondary">Splunk</span>
+                        <span class="badge bg-secondary">Wazuh</span>
+                        <span class="badge bg-secondary">MITRE ATT&CK</span>
+                    </div>
                 </div>
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-<!-- LABS -->
+<!-- LAB CHALLENGES SECTION -->
 <section id="lab-challenges" class="section-box">
-
-    <div class="container">
-
-        <h2 class="section-title">Lab Challenges</h2>
-
-        <div class="resume-item mb-3">
-            <h5>Phishing Email Analysis</h5>
-            <p>Analyzed headers, links, and attachments for threats.</p>
+    <div class="container text-center">
+        <h2 class="section-title" id="title-labs">Lab Challenges</h2>
+        <div class="row text-start mt-4 g-4 justify-content-center" id="labs-grid">
+            <!-- Lab 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="lab-card" id="lab-card-1">
+                    <h5 class="fw-bold">1. Network Enumeration & Service Discovery</h5>
+                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
+                    <ul class="lab-activities">
+                        <li>Nmap scanning</li>
+                        <li>Service fingerprinting</li>
+                        <li>Open port discovery</li>
+                        <li>Banner analysis</li>
+                    </ul>
+                    <div class="mt-auto pt-2">
+                        <span class="badge bg-info text-dark">Nmap</span>
+                        <span class="badge bg-info text-dark">Linux</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Lab 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="lab-card" id="lab-card-2">
+                    <h5 class="fw-bold">2. SMB Enumeration & Access Analysis</h5>
+                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
+                    <ul class="lab-activities">
+                        <li>Share enumeration</li>
+                        <li>File extraction</li>
+                        <li>Credential discovery</li>
+                    </ul>
+                    <div class="mt-auto pt-2">
+                        <span class="badge bg-info text-dark">smbclient</span>
+                        <span class="badge bg-info text-dark">Linux</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Lab 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="lab-card" id="lab-card-3">
+                    <h5 class="fw-bold">3. Web Application Investigation</h5>
+                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
+                    <ul class="lab-activities">
+                        <li>Source code inspection</li>
+                        <li>HTML comment discovery</li>
+                        <li>Browser console analysis</li>
+                    </ul>
+                    <div class="mt-auto pt-2">
+                        <span class="badge bg-info text-dark">Browser Developer Tools</span>
+                        <span class="badge bg-info text-dark">Curl</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Lab 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="lab-card" id="lab-card-4">
+                    <h5 class="fw-bold">4. Log Analysis & Threat Detection</h5>
+                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
+                    <ul class="lab-activities">
+                        <li>Event analysis</li>
+                        <li>Security monitoring</li>
+                        <li>Alert review</li>
+                    </ul>
+                    <div class="mt-auto pt-2">
+                        <span class="badge bg-info text-dark">FortiSIEM</span>
+                        <span class="badge bg-info text-dark">Splunk</span>
+                        <span class="badge bg-info text-dark">Wazuh</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Lab 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="lab-card" id="lab-card-5">
+                    <h5 class="fw-bold">5. Digital Forensics</h5>
+                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
+                    <ul class="lab-activities">
+                        <li>Evidence collection</li>
+                        <li>Artifact extraction</li>
+                        <li>Chain of custody documentation</li>
+                    </ul>
+                    <div class="mt-auto pt-2">
+                        <span class="badge bg-info text-dark">Autopsy</span>
+                        <span class="badge bg-info text-dark">FTK Imager</span>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="resume-item">
-            <h5>Web Vulnerability Assessment</h5>
-            <p>Performed scanning and manual testing for vulnerabilities.</p>
-        </div>
-
     </div>
-
 </section>
 
-<!-- CONTACT -->
+<!-- CONTACT SECTION -->
 <section id="contact" class="section-box text-center">
-
     <div class="container">
-
-        <h2 class="section-title">Contact</h2>
-
-        <p>Email: matonyando@gmail.com</p>
-        <p>Phone: +254 742 846 700</p>
-        <p>Location: Nairobi, Kenya</p>
-
+        <h2 class="section-title" id="title-contact">Contact</h2>
+        <div class="row mt-4 g-3 justify-content-center text-center" id="contact-grid">
+            <div class="col-sm-6 col-md-3">
+                <div class="contact-item" id="contact-item-email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h5>Email</h5>
+                    <a href="mailto:matonyando@gmail.com">matonyando@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="contact-item" id="contact-item-phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5>Phone</h5>
+                    <a href="tel:+254742846700">+254 742 846 700</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="contact-item" id="contact-item-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h5>Location</h5>
+                    <span class="text-muted">Nairobi, Kenya</span>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="contact-item" id="contact-item-linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h5>LinkedIn</h5>
+                    <a href="https://www.linkedin.com/in/martin-nyandigisi/" target="_blank" rel="noopener noreferrer">Martin Nyandigisi</a>
+                </div>
+            </div>
+        </div>
     </div>
-
 </section>
 
 <!-- FOOTER -->
-<footer class="footer">
-    <p>&copy; 2026 Martin Nyandigisi Mylles</p>
+<footer class="footer" id="main-footer">
+    <div class="container">
+        <p>&copy; 2026 Martin Nyandigisi Mylles. All Rights Reserved.</p>
+    </div>
 </footer>
 
+<!-- Bootstrap Bundle with Popper JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
 
 </body>
 </html>
