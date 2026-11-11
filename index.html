@@ -3,653 +3,861 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin Nyandigisi Mylles | Cybersecurity Analyst Portfolio</title>
-    <meta name="description" content="Professional portfolio of Martin Nyandigisi Mylles, Cybersecurity Analyst specializing in SOC Operations, Threat Detection, Security Monitoring, and Incident Response.">
+    <title>Martin Nyandigisi Mylles | Cybersecurity Analyst</title>
+    <meta name="description" content="Martin Nyandigisi Mylles is a cybersecurity analyst focused on SOC operations, threat detection, security monitoring and incident response. HCIA-Security, CyberShujaa, CAISR and Google Cybersecurity certified.">
+    <meta name="theme-color" content="#06080c">
+    <link rel="canonical" href="https://mnyando.github.io/">
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
+    <!-- Social preview -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Martin Nyandigisi Mylles — Cybersecurity Analyst">
+    <meta property="og:description" content="SOC operations · Threat detection · Incident response. Portfolio, experience, certifications and 40+ hands-on security labs.">
+    <meta property="og:url" content="https://mnyando.github.io/">
+    <meta property="og:image" content="https://mnyando.github.io/martin.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@Mnyandigisi">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306080c'/%3E%3Cpath d='M16 5l9 3.5v6.8c0 5.6-3.8 10-9 11.7-5.2-1.7-9-6.1-9-11.7V8.5z' fill='none' stroke='%2334e8b8' stroke-width='2.2' stroke-linejoin='round'/%3E%3Cpath d='M12 16l3 3 5.5-6' fill='none' stroke='%2334e8b8' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="martin.css">
+
+    <link rel="preload" as="image" href="martin.jpg">
+
+    <script>
+    (function () {
+        var d = document.documentElement, t = null;
+        d.classList.add('js');
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        d.setAttribute('data-theme', t);
+    })();
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Martin Nyandigisi Mylles",
+      "jobTitle": "Cybersecurity Analyst",
+      "url": "https://mnyando.github.io/",
+      "image": "https://mnyando.github.io/martin.jpg",
+      "email": "mailto:matonyando@gmail.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "United States International University – Africa" },
+      "knowsAbout": ["Security Operations", "Threat Detection", "Incident Response", "SIEM", "Digital Forensics", "Network Security", "MITRE ATT&CK"],
+      "sameAs": ["https://www.linkedin.com/in/martin-nyandigisi/", "https://github.com/mnyando", "https://twitter.com/Mnyandigisi"]
+    }
+    </script>
 </head>
 
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="main-nav">
-    <div class="container">
-        <a class="navbar-brand" href="#home" id="nav-logo">
-            <i class="fa-solid fa-shield-halved text-info"></i> Martin Mylles
+<!-- ============================== NAV ============================== -->
+<header class="nav" id="nav">
+    <div class="container nav__inner">
+        <a class="brand" href="#home" aria-label="Martin Mylles — back to top">
+            <span class="brand__mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></svg>
+            </span>
+            <span aria-hidden="true"><span class="brand__prompt">~/</span>mylles<span class="brand__cursor"></span></span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="nav-toggle-btn">
-            <span class="navbar-toggler-icon"></span>
+
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+            <span></span><span></span><span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home" id="nav-link-home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills" id="nav-link-skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#resume" id="nav-link-resume">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education" id="nav-link-education">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#certifications" id="nav-link-certs">Certifications</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects" id="nav-link-projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#lab-challenges" id="nav-link-labs">Lab Challenges</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact" id="nav-link-contact">Contact</a></li>
+
+        <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch to light theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+
+        <nav aria-label="Primary">
+            <ul class="nav__links" id="nav-links">
+                <li><a class="nav__link" href="#about">About</a></li>
+                <li><a class="nav__link" href="#skills">Skills</a></li>
+                <li><a class="nav__link" href="#experience">Experience</a></li>
+                <li><a class="nav__link" href="#credentials">Credentials</a></li>
+                <li><a class="nav__link" href="#projects">Projects</a></li>
+                <li><a class="nav__link" href="#labs">Labs</a></li>
+                <li><a class="nav__cta" href="#contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" id="home" aria-labelledby="hero-name">
+    <canvas class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+
+    <div class="container hero__grid">
+        <div class="hero__copy">
+            <p class="hero__status hero-in" style="--d:.05s">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span><strong>Open to</strong> SOC &amp; Security Analyst roles</span>
+            </p>
+
+            <h1 class="hero__name hero-in" id="hero-name" style="--d:.15s">
+                <span class="hero__name-line">Martin</span>
+                <span class="hero__name-line hero__name-line--dim">Nyandigisi</span>
+                <span class="hero__name-line">Mylles</span>
+            </h1>
+
+            <p class="hero__role hero-in" style="--d:.3s">
+                <span class="hero__role-prefix" aria-hidden="true">&gt; focus:</span>
+                <span class="typed" aria-hidden="true" data-words='["Cybersecurity Analyst","SOC Operations","Threat Detection","Incident Response","Digital Forensics"]'>Cybersecurity Analyst</span>
+                <span class="sr-only">Cybersecurity Analyst — SOC Operations, Threat Detection, Incident Response and Digital Forensics</span>
+            </p>
+
+            <p class="hero__summary hero-in" style="--d:.4s">
+                I monitor, investigate and document. Currently <strong>Systems &amp; Securities Infrastructure Officer at the COMESA Competition and Consumer Commission</strong>, with a forensic-IT degree, four security and IT roles, and 40+ hands-on labs behind me.
+            </p>
+
+            <div class="hero__actions hero-in" style="--d:.5s">
+                <a class="btn btn--primary" href="#experience">View experience <i class="fa-solid fa-arrow-right btn__arrow" aria-hidden="true"></i></a>
+                <a class="btn btn--ghost" href="#contact"><i class="fa-regular fa-envelope" aria-hidden="true"></i> Get in touch</a>
+            </div>
+
+            <ul class="hero__stats hero-in" style="--d:.6s">
+                <li class="stat"><span class="stat__value" data-count="12">12</span><span class="stat__label">Industry certifications</span></li>
+                <li class="stat"><span class="stat__value"><span data-count="40">40</span><sup>+</sup></span><span class="stat__label">Hands-on security labs</span></li>
+                <li class="stat"><span class="stat__value" data-count="4">4</span><span class="stat__label">Security &amp; IT roles</span></li>
+                <li class="stat"><span class="stat__value" data-count="3">3</span><span class="stat__label">Projects shipped</span></li>
+            </ul>
+        </div>
+
+        <div class="hero__badge hero-in" style="--d:.25s">
+            <div class="badge-stage">
+                <div class="lanyard" aria-hidden="true"></div>
+                <figure class="badge" id="badge" style="margin:0">
+                    <div class="badge__slot" aria-hidden="true"></div>
+                    <div class="badge__head" aria-hidden="true">
+                        <span>Blue Team</span>
+                        <strong>Analyst</strong>
+                    </div>
+                    <div class="badge__photo">
+                        <img src="martin.jpg" width="640" height="960" alt="Portrait of Martin Nyandigisi Mylles in a dark suit and tie" fetchpriority="high">
+                        <div class="badge__scan" aria-hidden="true"></div>
+                        <div class="badge__verified" aria-hidden="true"><i class="fa-solid fa-circle-check"></i> VERIFIED</div>
+                    </div>
+                    <figcaption class="badge__body">
+                        <div class="badge__name">Martin N. Mylles</div>
+                        <div class="badge__title">Cybersecurity Analyst</div>
+                        <dl class="badge__meta">
+                            <div><dt>Specialty</dt><dd>SOC · DFIR</dd></div>
+                            <div><dt>Base</dt><dd>Nairobi, KE</dd></div>
+                            <div><dt>Degree</dt><dd>B.Sc. IST</dd></div>
+                            <div><dt>Status</dt><dd style="color:var(--signal)">Active</dd></div>
+                        </dl>
+                        <div class="badge__barcode" aria-hidden="true"></div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"></span>
+    </div>
+</section>
+
+<!-- ============================== TOOL MARQUEE ============================== -->
+<div class="marquee" aria-label="Tools I work with">
+    <div class="marquee__track">
+        <ul class="marquee__group">
+            <li class="marquee__item">FortiSIEM</li>
+            <li class="marquee__item">Splunk</li>
+            <li class="marquee__item">Wazuh</li>
+            <li class="marquee__item">Wireshark</li>
+            <li class="marquee__item">Acunetix</li>
+            <li class="marquee__item">Autopsy</li>
+            <li class="marquee__item">FTK Imager</li>
+            <li class="marquee__item">Burp Suite</li>
+            <li class="marquee__item">Nmap</li>
+            <li class="marquee__item">BloodHound</li>
+            <li class="marquee__item">SpamTitan</li>
+            <li class="marquee__item">Hashcat</li>
+            <li class="marquee__item">MITRE ATT&amp;CK</li>
+            <li class="marquee__item">ISO/IEC 27001</li>
+        </ul>
+        <ul class="marquee__group" aria-hidden="true">
+            <li class="marquee__item">FortiSIEM</li>
+            <li class="marquee__item">Splunk</li>
+            <li class="marquee__item">Wazuh</li>
+            <li class="marquee__item">Wireshark</li>
+            <li class="marquee__item">Acunetix</li>
+            <li class="marquee__item">Autopsy</li>
+            <li class="marquee__item">FTK Imager</li>
+            <li class="marquee__item">Burp Suite</li>
+            <li class="marquee__item">Nmap</li>
+            <li class="marquee__item">BloodHound</li>
+            <li class="marquee__item">SpamTitan</li>
+            <li class="marquee__item">Hashcat</li>
+            <li class="marquee__item">MITRE ATT&amp;CK</li>
+            <li class="marquee__item">ISO/IEC 27001</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ============================== ABOUT ============================== -->
+<section class="section" id="about" aria-labelledby="about-title">
+    <div class="container about__grid">
+        <div class="about__copy">
+            <div class="section-head reveal">
+                <span class="eyebrow">01 — About</span>
+                <h2 class="section-title" id="about-title">Defender by training. <em>Investigator</em> by habit.</h2>
+            </div>
+            <div class="reveal" style="--d:.1s">
+                <p>I'm a cybersecurity professional with a <strong>B.Sc. in Information Systems &amp; Technology</strong> from USIU-Africa, concentrating in <strong>Forensic IT &amp; Cybercrime</strong>.</p>
+                <p>Today I'm the <strong>Systems and Securities Infrastructure Officer at the COMESA Competition and Consumer Commission (CCCC)</strong> in Malawi. Before that I did IT support at ICED, a government security internship in the Information Security Department at ICT Authority Kenya, and part-time network administration at Power Innovations.</p>
+                <p>I hold <strong>HCIA-Security V4.0</strong>, <strong>CyberShujaa Security Analyst</strong>, <strong>CAISR</strong> and the <strong>Google Cybersecurity</strong> certificate, and I'm ready to contribute to a SOC or cybersecurity analyst team.</p>
+            </div>
+
+            <ol class="principles reveal" style="--d:.2s">
+                <li class="principle">
+                    <span class="principle__n">0x01</span>
+                    <div><h3>Watch the signal</h3><p>Logs, alerts and traffic tell the story first. I read them closely.</p></div>
+                </li>
+                <li class="principle">
+                    <span class="principle__n">0x02</span>
+                    <div><h3>Respond with discipline</h3><p>Triage, contain, escalate. Calm, structured and on the record.</p></div>
+                </li>
+                <li class="principle">
+                    <span class="principle__n">0x03</span>
+                    <div><h3>Document everything</h3><p>Clear incident reports turn one fix into lasting organisational memory.</p></div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="terminal reveal" style="--d:.15s" role="img" aria-label="Terminal showing Martin's profile: Systems and Securities Infrastructure Officer at COMESA CCCC, focused on SOC operations, threat detection and incident response; B.Sc. IST in Forensic IT and Cybercrime; HCIA-Security, CyberShujaa, CAISR and Google certified; 40+ labs; open to SOC analyst roles.">
+            <div class="terminal__bar" aria-hidden="true">
+                <span class="terminal__dot"></span><span class="terminal__dot"></span><span class="terminal__dot"></span>
+                <span class="terminal__title">martin@soc: ~</span>
+            </div>
+            <div class="terminal__body" id="terminal" aria-hidden="true"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================== SKILLS ============================== -->
+<section class="section" id="skills" aria-labelledby="skills-title">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">02 — Capabilities</span>
+            <h2 class="section-title" id="skills-title">Coverage across the <em>whole incident</em>.</h2>
+            <p class="section-lead">From the first alert to the final report: detection, analysis, hardening and forensics, grounded in industry frameworks.</p>
+        </div>
+
+        <div class="bento">
+            <article class="card skill reveal">
+                <div class="skill__top">
+                    <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-satellite-dish"></i></span>
+                    <span class="skill__tag">Detect</span>
+                </div>
+                <h3>Threat Detection &amp; Monitoring</h3>
+                <p>SIEM-driven monitoring, log analysis and alert triage to surface anomalies early.</p>
+                <ul class="chips" aria-label="Tools">
+                    <li class="chip">FortiSIEM</li><li class="chip">Splunk</li><li class="chip">Wazuh</li>
+                    <li class="chip">Log Analysis</li><li class="chip">Alert Triage</li><li class="chip">Wireshark</li>
+                </ul>
+            </article>
+
+            <article class="card skill reveal" style="--d:.08s">
+                <div class="skill__top">
+                    <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span class="skill__tag">Respond</span>
+                </div>
+                <h3>Incident Response &amp; Forensics</h3>
+                <p>Containment support, evidence handling and phishing investigation, documented for audit.</p>
+                <ul class="chips" aria-label="Tools">
+                    <li class="chip">Incident Documentation</li><li class="chip">Autopsy</li><li class="chip">FTK Imager</li>
+                    <li class="chip">Email Security</li><li class="chip">Phishing Analysis</li><li class="chip">SpamTitan</li>
+                </ul>
+            </article>
+
+            <article class="card skill reveal">
+                <div class="skill__top">
+                    <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-bug"></i></span>
+                    <span class="skill__tag">Assess</span>
+                </div>
+                <h3>Vulnerability Management</h3>
+                <p>Scanning, assessment and tracking remediation through to closure.</p>
+                <ul class="chips" aria-label="Tools">
+                    <li class="chip">Acunetix</li><li class="chip">Vulnerability Assessment</li><li class="chip">Remediation Tracking</li>
+                </ul>
+            </article>
+
+            <article class="card skill reveal" style="--d:.08s">
+                <div class="skill__top">
+                    <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-network-wired"></i></span>
+                    <span class="skill__tag">Protect</span>
+                </div>
+                <h3>Network Security</h3>
+                <p>Perimeter controls, segmentation and traffic analysis.</p>
+                <ul class="chips" aria-label="Tools">
+                    <li class="chip">Firewalls</li><li class="chip">VPN Fundamentals</li><li class="chip">Network Segmentation</li><li class="chip">Traffic Analysis</li>
+                </ul>
+            </article>
+
+            <article class="card skill reveal" style="--d:.16s">
+                <div class="skill__top">
+                    <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-terminal"></i></span>
+                    <span class="skill__tag">Operate</span>
+                </div>
+                <h3>Systems &amp; Administration</h3>
+                <p>Cross-platform administration with a builder's background.</p>
+                <ul class="chips" aria-label="Tools">
+                    <li class="chip">Windows</li><li class="chip">Linux</li><li class="chip">SQL</li><li class="chip">PHP</li><li class="chip">HTML/CSS</li><li class="chip">Android Dev</li>
+                </ul>
+            </article>
+
+            <article class="card skill skill--wide reveal">
+                <div>
+                    <div class="skill__top">
+                        <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-diagram-project"></i></span>
+                        <span class="skill__tag">Frameworks</span>
+                    </div>
+                    <h3>Grounded in frameworks</h3>
+                    <p>I map activity to adversary behaviour and align controls to recognised standards.</p>
+                    <ul class="chips" aria-label="Frameworks">
+                        <li class="chip">MITRE ATT&amp;CK</li><li class="chip">ISO/IEC 27001</li><li class="chip">Ethical Hacking Methodology</li><li class="chip">AI Security &amp; Risk</li>
+                    </ul>
+                </div>
+                <div class="attack-row" id="attack-row" aria-label="MITRE ATT&amp;CK enterprise tactics" role="list">
+                    <span class="attack-cell" role="listitem">Recon</span>
+                    <span class="attack-cell" role="listitem">Resource Dev</span>
+                    <span class="attack-cell" role="listitem">Initial Access</span>
+                    <span class="attack-cell" role="listitem">Execution</span>
+                    <span class="attack-cell" role="listitem">Persistence</span>
+                    <span class="attack-cell" role="listitem">Priv Esc</span>
+                    <span class="attack-cell" role="listitem">Defense Evasion</span>
+                    <span class="attack-cell" role="listitem">Credential Access</span>
+                    <span class="attack-cell" role="listitem">Discovery</span>
+                    <span class="attack-cell" role="listitem">Lateral Movement</span>
+                    <span class="attack-cell" role="listitem">Collection</span>
+                    <span class="attack-cell" role="listitem">C2</span>
+                    <span class="attack-cell" role="listitem">Exfiltration</span>
+                    <span class="attack-cell" role="listitem">Impact</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============================== EXPERIENCE ============================== -->
+<section class="section" id="experience" aria-labelledby="exp-title">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">03 — Experience</span>
+            <h2 class="section-title" id="exp-title">On the <em>front line</em> of real infrastructure.</h2>
+            <p class="section-lead">Security monitoring, incident handling and hardening across a regional commission, a government authority and the private sector.</p>
+        </div>
+
+        <div class="timeline" id="timeline">
+            <span class="timeline__fill" aria-hidden="true"></span>
+            <ol class="timeline__jobs">
+
+            <li class="job card reveal">
+                <span class="job__node" aria-hidden="true"></span>
+                <div class="job__head">
+                    <div>
+                        <h3 class="job__role">Systems and Securities Infrastructure Officer</h3>
+                        <p class="job__org">COMESA Competition and Consumer Commission (CCCC) <span class="sep" aria-hidden="true">/</span> <span class="loc">Malawi</span></p>
+                    </div>
+                    <span class="job__when job__when--live"><span class="status-dot" aria-hidden="true"></span> Jul 2026 — Present</span>
+                </div>
+                <ul class="job__list">
+                    <li>Monitor the Commission's ICT environment and system logs to identify, document, and escalate potential cyber threats and anomalies</li>
+                    <li>Utilize network diagnostic tools, including Wireshark, to capture and analyze traffic for security incident investigations</li>
+                    <li>Track and implement corrective actions arising from ICT audit findings to maintain compliance with information security policies</li>
+                    <li class="is-extra">Assist in the configuration, documentation, and patch deployment for network infrastructure, servers, and endpoint devices</li>
+                    <li class="is-extra">Provide first-level ICT support to diagnose and resolve hardware, network connectivity, and video conferencing issues</li>
+                    <li class="is-extra">Support the Consumer Division with case documentation, complaint investigations, and regulatory policy research</li>
+                </ul>
+                <button class="job__more" type="button" aria-expanded="false"><span>Show 3 more</span> <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            </li>
+
+            <li class="job card reveal">
+                <span class="job__node" aria-hidden="true"></span>
+                <div class="job__head">
+                    <div>
+                        <h3 class="job__role">IT Support Intern</h3>
+                        <p class="job__org">ICED — International Centre for Evaluation and Development</p>
+                    </div>
+                    <span class="job__when">Apr 2026 — Jul 2026</span>
+                </div>
+                <ul class="job__list">
+                    <li>Assist with cybersecurity tasks including antivirus and patch updates, access management, and security incident reporting</li>
+                    <li>Perform routine server and system monitoring, log reviews, and data backup support</li>
+                    <li>Monitor network connectivity and assist with LAN/Wi-Fi troubleshooting, liaising with service providers</li>
+                    <li class="is-extra">Support day-to-day ICT operations including hardware configuration and asset inventory management</li>
+                    <li class="is-extra">Support end-users on Microsoft Office suite, email setup, and internal application issues</li>
+                    <li class="is-extra">Conduct data entry, cleaning, and basic analysis using Excel, preparing reports for programme teams</li>
+                </ul>
+                <button class="job__more" type="button" aria-expanded="false"><span>Show 3 more</span> <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            </li>
+
+            <li class="job card reveal">
+                <span class="job__node" aria-hidden="true"></span>
+                <div class="job__head">
+                    <div>
+                        <h3 class="job__role">Network Administrator <span style="color:var(--text-3);font-weight:500">(Part-Time)</span></h3>
+                        <p class="job__org">Power Innovations</p>
+                    </div>
+                    <span class="job__when">Oct 2025 — Feb 2026</span>
+                </div>
+                <ul class="job__list">
+                    <li>Enforced endpoint security hygiene, managing patch deployment, antivirus updates, and OS hardening</li>
+                    <li>Monitored and maintained company server infrastructure, ensuring stable performance and uptime</li>
+                    <li>Diagnosed and resolved POS system failures by retrieving and analysing server-side error logs</li>
+                    <li class="is-extra">Troubleshot network, POS, and hardware issues across company systems to minimise downtime</li>
+                </ul>
+                <button class="job__more" type="button" aria-expanded="false"><span>Show 1 more</span> <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            </li>
+
+            <li class="job card reveal">
+                <span class="job__node" aria-hidden="true"></span>
+                <div class="job__head">
+                    <div>
+                        <h3 class="job__role">Information Security Intern</h3>
+                        <p class="job__org">ICT Authority Kenya <span class="sep" aria-hidden="true">/</span> <span class="loc">Information Security Department</span></p>
+                    </div>
+                    <span class="job__when">May 2025 — Jul 2025</span>
+                </div>
+                <ul class="job__list">
+                    <li>Responded to security incidents, supporting containment and documenting events in real time for audit records</li>
+                    <li>Assisted with vulnerability scanning using Acunetix and monitored security events through Fortinet tools</li>
+                    <li>Supported email threat filtering using SpamTitan and documented security findings for the team</li>
+                    <li class="is-extra">Prepared detailed incident reports covering network issues, attack indicators, and resolutions</li>
+                    <li class="is-extra">Supported NOC troubleshooting of network security issues prior to escalation, reducing resolution time</li>
+                    <li class="is-extra">Created and managed tickets for failed subject links, coordinating with contractors to restore service</li>
+                    <li class="is-extra">Assisted in configuring workstation hardware and software within the Information Security Department</li>
+                </ul>
+                <button class="job__more" type="button" aria-expanded="false"><span>Show 4 more</span> <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            </li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<!-- ============================== CREDENTIALS ============================== -->
+<section class="section" id="credentials" aria-labelledby="creds-title">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">04 — Credentials</span>
+            <h2 class="section-title" id="creds-title">Verified <em>knowledge</em>, not just claims.</h2>
+            <p class="section-lead">A forensic-IT degree backed by twelve vendor, industry and institutional certifications, with credential IDs available for verification.</p>
+        </div>
+
+        <div class="creds">
+            <article class="card edu reveal" aria-labelledby="edu-title">
+                <div class="edu__icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+                <span class="edu__label">Education</span>
+                <h3 id="edu-title">Bachelor of Science in Information Systems &amp; Technology</h3>
+                <p class="edu__school">United States International University — Africa</p>
+                <div class="edu__conc">
+                    <span>Concentration</span>
+                    <strong>Forensic Information Technology &amp; Cybercrime</strong>
+                </div>
+                <p class="edu__date"><i class="fa-regular fa-calendar-check" aria-hidden="true" style="color:var(--signal)"></i> Graduated September 2025</p>
+            </article>
+
+            <ul class="certs" aria-label="Certifications">
+                <li class="card cert cert--featured reveal">
+                    <span class="cert__icon" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></span>
+                    <div>
+                        <span class="cert__flag">Latest</span>
+                        <h3>ADBI Cybersecurity Course</h3>
+                        <p class="cert__issuer">Asian Development Bank Institute</p>
+                        <span class="cert__date">Nov 2026</span>
+                        <span class="cert__id">ID 214898-179-386-2340</span>
+                    </div>
+                </li>
+                <li class="card cert cert--featured reveal" style="--d:.06s">
+                    <span class="cert__icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
+                    <div>
+                        <span class="cert__flag">Vendor</span>
+                        <h3>HCIA-Security V4.0 Course</h3>
+                        <p class="cert__issuer">Huawei</p>
+                        <span class="cert__date">Jun 2026</span>
+                        <span class="cert__id">ID EBG20260603027058</span>
+                    </div>
+                </li>
+                <li class="card cert reveal">
+                    <span class="cert__icon" aria-hidden="true"><i class="fa-solid fa-user-shield"></i></span>
+                    <div>
+                        <h3>Security Analyst — CyberShujaa (Cohort XI)</h3>
+                        <p class="cert__issuer">USIU-Africa, Serianu Ltd &amp; Kenya Bankers Association</p>
+                        <span class="cert__date">Apr 2026</span>
+                        <span class="cert__id">ID CS2025-VK2604270913582506</span>
+                    </div>
+                </li>
+                <li class="card cert reveal" style="--d:.06s">
+                    <span class="cert__icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></span>
+                    <div>
+                        <h3>Certified Artificial Intelligence Security &amp; Risk (CAISR)</h3>
+                        <p class="cert__issuer">Red Team Leaders</p>
+                        <span class="cert__date">Feb 2026</span>
+                    </div>
+                </li>
+                <li class="card cert reveal">
+                    <span class="cert__icon" aria-hidden="true"><i class="fa-solid fa-spider"></i></span>
+                    <div>
+                        <h3>OWASP Top 10</h3>
+                        <p class="cert__issuer">TryHackMe</p>
+                        <span class="cert__date">Nov 2025</span>
+                    </div>
+                </li>
+                <li class="card cert reveal" style="--d:.06s">
+                    <span class="cert__icon" aria-hidden="true"><i class="fa-solid fa-building-shield"></i></span>
+                    <div>
+                        <h3>Enterprise Security in Practice</h3>
+                        <p class="cert__issuer">IBM</p>
+                        <span class="cert__date">Sep 2025</span>
+                    </div>
+                </li>
+                <li class="card cert reveal">
+                    <span class="cert__icon" aria-hidden="true"><i class="fa-brands fa-microsoft"></i></span>
+                    <div>
+                        <h3>Career Essentials in Cybersecurity</h3>
+                        <p class="cert__issuer">Microsoft &amp; LinkedIn</p>
+                        <span class="cert__date">Jun 2025</span>
+                    </div>
+                </li>
+                <li class="card cert reveal" style="--d:.06s">
+                    <span class="cert__icon" aria-hidden="true"><i class="fa-solid fa-mask"></i></span>
+                    <div>
+                        <h3>Ethical Hacker</h3>
+                        <p class="cert__issuer">Cisco Networking Academy</p>
+                        <span class="cert__date">Mar 2025</span>
+                    </div>
+                </li>
+                <li class="card cert reveal">
+                    <span class="cert__icon" aria-hidden="true"><i class="fa-solid fa-sitemap"></i></span>
+                    <div>
+                        <h3>Foundations of Operationalizing MITRE ATT&amp;CK v13</h3>
+                        <p class="cert__issuer">AttackIQ</p>
+                        <span class="cert__date">Feb 2025</span>
+                    </div>
+                </li>
+                <li class="card cert reveal" style="--d:.06s">
+                    <span class="cert__icon" aria-hidden="true"><i class="fa-solid fa-lock"></i></span>
+                    <div>
+                        <h3>Cybersecurity Fundamentals</h3>
+                        <p class="cert__issuer">IBM</p>
+                        <span class="cert__date">Feb 2025</span>
+                    </div>
+                </li>
+                <li class="card cert reveal">
+                    <span class="cert__icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
+                    <div>
+                        <h3>Code Generation &amp; Optimization Using IBM Granite</h3>
+                        <p class="cert__issuer">IBM SkillsBuild</p>
+                        <span class="cert__date">Feb 2025</span>
+                    </div>
+                </li>
+                <li class="card cert reveal" style="--d:.06s">
+                    <span class="cert__icon" aria-hidden="true"><i class="fa-brands fa-google"></i></span>
+                    <div>
+                        <h3>Google Cybersecurity Professional Certificate (V2)</h3>
+                        <p class="cert__issuer">Google</p>
+                        <span class="cert__date">Jan 2025</span>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
-</nav>
+</section>
 
-<!-- HOME / HERO SECTION -->
-<section id="home" class="home-section">
+<!-- ============================== PROJECTS ============================== -->
+<section class="section" id="projects" aria-labelledby="projects-title">
     <div class="container">
-        <div class="row align-items-center">
-            <!-- PROFILE IMAGE -->
-            <div class="col-lg-4 text-center mb-4 mb-lg-0 profile-img-container">
-                <img src="Martin_Image (1).png" alt="Martin Nyandigisi Mylles Profile Picture" class="profile-img" id="img-profile">
-            </div>
-            <!-- HERO TEXT -->
-            <div class="col-lg-8" id="hero-text-content">
-                <h1 class="display-4 fw-bold">Martin Nyandigisi Mylles</h1>
-                <p class="lead text-uppercase" id="professional-title">
-                    Cybersecurity Analyst · SOC Operations · Threat Detection & Incident Response
-                </p>
-                <p class="my-4" id="professional-summary">
-                    Cybersecurity professional with a B.Sc. in Information Systems & Technology (Forensic IT & Cybercrime concentration) from USIU-Africa. Currently serving as a Systems and Securities Infrastructure Officer at the COMESA Competition and Consumer Commission (CCCC), with hands-on experience in IT support from ICED, a government security internship at ICT Authority Kenya's Information Security Department, and a part-time network administration role at Power Innovations. Holds industry-recognised certifications including HCIA-Security V4.0 (Huawei), CyberShujaa Security Analyst, CAISR, and Google Cybersecurity. Eager to contribute to a SOC or cybersecurity analyst team.
-                </p>
-                <div class="d-flex gap-3 flex-wrap" id="hero-cta-buttons">
-                    <a href="#resume" class="btn btn-primary" id="btn-hero-resume">View Experience</a>
-                    <a href="#contact" class="btn btn-outline-primary text-light" id="btn-hero-contact">Contact Me</a>
+        <div class="section-head reveal">
+            <span class="eyebrow">05 — Projects</span>
+            <h2 class="section-title" id="projects-title">Things I've <em>built</em>.</h2>
+            <p class="section-lead">Full-stack and mobile work. Knowing how systems are built makes me better at defending them.</p>
+        </div>
+
+        <div class="projects">
+            <article class="card project reveal">
+                <div class="project__visual" aria-hidden="true">
+                    <span class="project__kind">Web · E-commerce</span>
+                    <span class="project__glyph"><i class="fa-solid fa-basket-shopping"></i></span>
                 </div>
-            </div>
+                <div class="project__body">
+                    <h3>Mama Mboga — Grocery Shop</h3>
+                    <p>E-commerce web app built with Flask and Python for sourcing fresh organic vegetables and fruits directly from local farms, with a responsive frontend and backend-driven product management.</p>
+                    <ul class="chips" aria-label="Tech stack">
+                        <li class="chip">Python</li><li class="chip">Flask</li><li class="chip">HTML</li><li class="chip">JavaScript</li><li class="chip">CSS</li>
+                    </ul>
+                    <div class="project__links">
+                        <a class="btn btn--primary btn--sm" href="https://groceryshop-hjxm.onrender.com/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live demo<span class="sr-only"> of Mama Mboga (opens in new tab)</span></a>
+                        <a class="btn btn--ghost btn--sm" href="https://github.com/mnyando/GroceryShop" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code<span class="sr-only"> for Mama Mboga (opens in new tab)</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card project reveal" style="--d:.08s; --hue: var(--info-rgb)">
+                <div class="project__visual" aria-hidden="true">
+                    <span class="project__kind">Web · Storefront</span>
+                    <span class="project__glyph"><i class="fa-solid fa-gears"></i></span>
+                </div>
+                <div class="project__body">
+                    <h3>Car Parts Store</h3>
+                    <p>Minimalist e-commerce storefront for automotive parts, built with a Python-heavy backend and a clean product interface.</p>
+                    <ul class="chips" aria-label="Tech stack">
+                        <li class="chip">Python</li><li class="chip">Flask</li>
+                    </ul>
+                    <div class="project__links">
+                        <a class="btn btn--primary btn--sm" href="https://car-parts-nq47.onrender.com/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live demo<span class="sr-only"> of Car Parts Store (opens in new tab)</span></a>
+                        <a class="btn btn--ghost btn--sm" href="https://github.com/mnyando/car-parts" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code<span class="sr-only"> for Car Parts Store (opens in new tab)</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card project reveal" style="--d:.16s; --hue: 255, 181, 71">
+                <div class="project__visual" aria-hidden="true">
+                    <span class="project__kind">Android · Safety</span>
+                    <span class="project__glyph"><i class="fa-solid fa-bus-simple"></i></span>
+                </div>
+                <div class="project__body">
+                    <h3>School Transport Child Safety System</h3>
+                    <p>Android and Firebase platform that lets schools and parents monitor student pickup and drop-off in real time, with push notification alerts.</p>
+                    <ul class="chips" aria-label="Tech stack">
+                        <li class="chip">Java</li><li class="chip">Android Studio</li><li class="chip">Firebase Auth</li><li class="chip">Firestore</li><li class="chip">FCM</li>
+                    </ul>
+                    <div class="project__links">
+                        <a class="btn btn--ghost btn--sm" href="https://github.com/mnyando/Transport-App" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code<span class="sr-only"> for School Transport Child Safety System (opens in new tab)</span></a>
+                    </div>
+                </div>
+            </article>
         </div>
     </div>
 </section>
 
-<!-- CORE SKILLS SECTION -->
-<section id="skills" class="section-box">
-    <div class="container text-center">
-        <h2 class="section-title" id="title-skills">Core Skills</h2>
-        <div class="row text-start mt-4 g-4" id="skills-grid">
-            <!-- Threat Detection & Monitoring -->
-            <div class="col-md-6 col-lg-4">
-                <div class="skills-card" id="skills-card-threat">
-                    <h5><i class="fa-solid fa-crosshairs"></i> Threat Detection & Monitoring</h5>
-                    <div class="d-flex flex-wrap">
-                        <span class="skill-badge">FortiSIEM</span>
-                        <span class="skill-badge">Splunk</span>
-                        <span class="skill-badge">Wazuh</span>
-                        <span class="skill-badge">Log Analysis</span>
-                        <span class="skill-badge">Alert Triage</span>
-                        <span class="skill-badge">Wireshark</span>
-                    </div>
-                </div>
+<!-- ============================== LABS ============================== -->
+<section class="section" id="labs" aria-labelledby="labs-title">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">06 — Lab Challenges</span>
+            <h2 class="section-title" id="labs-title">Practice on <em>both sides</em> of the wire.</h2>
+            <p class="section-lead">40+ practical labs across Hack The Box, TryHackMe and CyberShujaa. Thinking like an attacker sharpens how I defend.</p>
+        </div>
+
+        <div class="labs__bar reveal">
+            <div class="filters" role="group" aria-label="Filter labs by type">
+                <button class="filter" type="button" data-filter="all" aria-pressed="true">All <span class="filter__count">10</span></button>
+                <button class="filter" type="button" data-filter="offense" aria-pressed="false">Offensive <span class="filter__count">5</span></button>
+                <button class="filter" type="button" data-filter="defense" aria-pressed="false">Defensive <span class="filter__count">3</span></button>
+                <button class="filter" type="button" data-filter="forensics" aria-pressed="false">Forensics <span class="filter__count">1</span></button>
+                <button class="filter" type="button" data-filter="assessment" aria-pressed="false">Assessment <span class="filter__count">1</span></button>
             </div>
-            <!-- Vulnerability Management -->
-            <div class="col-md-6 col-lg-4">
-                <div class="skills-card" id="skills-card-vuln">
-                    <h5><i class="fa-solid fa-bug"></i> Vulnerability Management</h5>
-                    <div class="d-flex flex-wrap">
-                        <span class="skill-badge">Acunetix</span>
-                        <span class="skill-badge">Vulnerability Assessment</span>
-                        <span class="skill-badge">Remediation Tracking</span>
-                    </div>
+            <p class="labs__platforms"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> <strong>HTB</strong> · <strong>TryHackMe</strong> · <strong>CyberShujaa</strong></p>
+        </div>
+        <p class="sr-only" aria-live="polite" id="labs-status"></p>
+
+        <div class="labs" id="labs-grid">
+            <article class="card lab reveal" data-type="offense">
+                <div class="lab__head"><span class="lab__id">LAB-01</span><span class="lab__type lab__type--offense">Offensive</span></div>
+                <h3>Network Reconnaissance &amp; Enumeration</h3>
+                <ul>
+                    <li>Nmap scanning, service fingerprinting and open port discovery</li>
+                    <li>Banner grabbing and OS detection</li>
+                    <li>Network mapping and target profiling</li>
+                </ul>
+                <ul class="chips" aria-label="Tools"><li class="chip">Nmap</li><li class="chip">Linux</li></ul>
+            </article>
+
+            <article class="card lab reveal" data-type="offense" style="--d:.06s">
+                <div class="lab__head"><span class="lab__id">LAB-02</span><span class="lab__type lab__type--offense">Offensive</span></div>
+                <h3>Web Application Security (OWASP Top 10)</h3>
+                <ul>
+                    <li>SQL injection and XSS fundamentals</li>
+                    <li>Authentication and authorization vulnerability testing</li>
+                    <li>Directory enumeration and web application assessment</li>
+                </ul>
+                <ul class="chips" aria-label="Tools"><li class="chip">Burp Suite</li><li class="chip">Browser Dev Tools</li><li class="chip">Linux</li></ul>
+            </article>
+
+            <article class="card lab reveal" data-type="offense" style="--d:.12s">
+                <div class="lab__head"><span class="lab__id">LAB-03</span><span class="lab__type lab__type--offense">Offensive</span></div>
+                <h3>Active Directory Security</h3>
+                <ul>
+                    <li>User and group enumeration</li>
+                    <li>AD attack path analysis</li>
+                    <li>Kerberos fundamentals and Windows domain security</li>
+                </ul>
+                <ul class="chips" aria-label="Tools"><li class="chip">BloodHound</li><li class="chip">PowerShell</li><li class="chip">Linux</li></ul>
+            </article>
+
+            <article class="card lab reveal" data-type="offense">
+                <div class="lab__head"><span class="lab__id">LAB-04</span><span class="lab__type lab__type--offense">Offensive</span></div>
+                <h3>Linux &amp; Windows Privilege Escalation</h3>
+                <ul>
+                    <li>File permissions and user management exploitation</li>
+                    <li>System enumeration and misconfiguration discovery</li>
+                    <li>Privilege escalation path identification</li>
+                </ul>
+                <ul class="chips" aria-label="Tools"><li class="chip">Linux</li><li class="chip">Windows</li><li class="chip">GTFOBins</li></ul>
+            </article>
+
+            <article class="card lab reveal" data-type="defense" style="--d:.06s">
+                <div class="lab__head"><span class="lab__id">LAB-05</span><span class="lab__type lab__type--defense">Defensive</span></div>
+                <h3>SOC Operations &amp; Log Analysis</h3>
+                <ul>
+                    <li>Security event monitoring and alert investigation</li>
+                    <li>SIEM fundamentals and threat detection workflows</li>
+                    <li>Incident response triage and documentation</li>
+                </ul>
+                <ul class="chips" aria-label="Tools"><li class="chip">FortiSIEM</li><li class="chip">Splunk</li><li class="chip">Wazuh</li></ul>
+            </article>
+
+            <article class="card lab reveal" data-type="defense" style="--d:.12s">
+                <div class="lab__head"><span class="lab__id">LAB-06</span><span class="lab__type lab__type--defense">Defensive</span></div>
+                <h3>Network Traffic Analysis</h3>
+                <ul>
+                    <li>Packet capture and protocol dissection</li>
+                    <li>TCP/IP analysis and anomaly detection</li>
+                    <li>Identifying indicators of compromise (IoCs) in simulated attacks</li>
+                </ul>
+                <ul class="chips" aria-label="Tools"><li class="chip">Wireshark</li></ul>
+            </article>
+
+            <article class="card lab reveal" data-type="forensics">
+                <div class="lab__head"><span class="lab__id">LAB-07</span><span class="lab__type lab__type--forensics">Forensics</span></div>
+                <h3>Digital Forensics</h3>
+                <ul>
+                    <li>Evidence collection and artifact extraction</li>
+                    <li>Chain of custody documentation</li>
+                    <li>File system and registry analysis</li>
+                </ul>
+                <ul class="chips" aria-label="Tools"><li class="chip">Autopsy</li><li class="chip">FTK Imager</li></ul>
+            </article>
+
+            <article class="card lab reveal" data-type="offense" style="--d:.06s">
+                <div class="lab__head"><span class="lab__id">LAB-08</span><span class="lab__type lab__type--offense">Offensive</span></div>
+                <h3>SMB Enumeration &amp; Exploitation</h3>
+                <ul>
+                    <li>Share enumeration and file extraction</li>
+                    <li>Credential discovery and access analysis</li>
+                    <li>SMB exploitation techniques</li>
+                </ul>
+                <ul class="chips" aria-label="Tools"><li class="chip">smbclient</li><li class="chip">Nmap</li><li class="chip">Linux</li></ul>
+            </article>
+
+            <article class="card lab reveal" data-type="defense" style="--d:.12s">
+                <div class="lab__head"><span class="lab__id">LAB-09</span><span class="lab__type lab__type--defense">Defensive</span></div>
+                <h3>Phishing &amp; Email Security</h3>
+                <ul>
+                    <li>Phishing email analysis and header inspection</li>
+                    <li>Spam detection and threat investigation</li>
+                    <li>Email-based attack identification</li>
+                </ul>
+                <ul class="chips" aria-label="Tools"><li class="chip">SpamTitan</li><li class="chip">Email Header Analysis</li></ul>
+            </article>
+
+            <article class="card lab reveal" data-type="assessment">
+                <div class="lab__head"><span class="lab__id">LAB-10</span><span class="lab__type lab__type--assessment">Assessment</span></div>
+                <h3>CyberShujaa Practical Assessments</h3>
+                <ul>
+                    <li>Nmap scanning, SSH access and SMB exploitation</li>
+                    <li>Base64 decoding, hash analysis and grep searches</li>
+                    <li>File compression/extraction and privilege escalation enumeration</li>
+                </ul>
+                <ul class="chips" aria-label="Tools"><li class="chip">Nmap</li><li class="chip">Linux</li><li class="chip">SSH</li><li class="chip">Hashcat</li></ul>
+            </article>
+
+            <aside class="card lab lab--more reveal" data-type="all" aria-label="More labs">
+                <span class="lab--more__count">+30</span>
+                <div>
+                    <h3>More labs completed</h3>
+                    <p>The ten above are a representative sample of 40+ hands-on rooms and challenges across Hack The Box, TryHackMe and CyberShujaa.</p>
                 </div>
-            </div>
-            <!-- Network Security -->
-            <div class="col-md-6 col-lg-4">
-                <div class="skills-card" id="skills-card-net">
-                    <h5><i class="fa-solid fa-network-wired"></i> Network Security</h5>
-                    <div class="d-flex flex-wrap">
-                        <span class="skill-badge">Firewalls</span>
-                        <span class="skill-badge">VPN Fundamentals</span>
-                        <span class="skill-badge">Network Segmentation</span>
-                        <span class="skill-badge">Traffic Analysis</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Incident Response & Forensics -->
-            <div class="col-md-6 col-lg-4">
-                <div class="skills-card" id="skills-card-ir">
-                    <h5><i class="fa-solid fa-shield-virus"></i> Incident Response & Forensics</h5>
-                    <div class="d-flex flex-wrap">
-                        <span class="skill-badge">Incident Documentation</span>
-                        <span class="skill-badge">Autopsy</span>
-                        <span class="skill-badge">FTK Imager</span>
-                        <span class="skill-badge">Email Security</span>
-                        <span class="skill-badge">Phishing Analysis</span>
-                        <span class="skill-badge">SpamTitan</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Systems & Administration -->
-            <div class="col-md-6 col-lg-4">
-                <div class="skills-card" id="skills-card-sys">
-                    <h5><i class="fa-solid fa-terminal"></i> Systems & Administration</h5>
-                    <div class="d-flex flex-wrap">
-                        <span class="skill-badge">Windows</span>
-                        <span class="skill-badge">Linux</span>
-                        <span class="skill-badge">SQL</span>
-                        <span class="skill-badge">PHP</span>
-                        <span class="skill-badge">HTML/CSS</span>
-                        <span class="skill-badge">Android Development</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Frameworks -->
-            <div class="col-md-6 col-lg-4">
-                <div class="skills-card" id="skills-card-frameworks">
-                    <h5><i class="fa-solid fa-diagram-project"></i> Frameworks</h5>
-                    <div class="d-flex flex-wrap">
-                        <span class="skill-badge">MITRE ATT&CK</span>
-                        <span class="skill-badge">ISO/IEC 27001</span>
-                        <span class="skill-badge">Ethical Hacking Methodology</span>
-                        <span class="skill-badge">AI Security & Risk</span>
-                    </div>
-                </div>
-            </div>
+            </aside>
         </div>
     </div>
 </section>
 
-<!-- WORK EXPERIENCE SECTION -->
-<section id="resume" class="section-box">
+<!-- ============================== CONTACT ============================== -->
+<section class="section" id="contact" aria-labelledby="contact-title" style="padding-bottom:0">
     <div class="container">
-        <h2 class="section-title d-block text-center" id="title-experience">Work Experience</h2>
-        <div class="mt-4" id="experience-list">
-            <!-- Job 1 -->
-            <div class="resume-item" id="exp-item-cccc">
-                <div class="d-flex justify-content-between align-items-start flex-wrap">
-                    <div>
-                        <h4 class="fw-bold">Systems and Securities Infrastructure Officer</h4>
-                        <h6 class="text-info">COMESA Competition and Consumer Commission (CCCC), Malawi</h6>
+        <div class="contact reveal">
+            <div class="contact__grid">
+                <div>
+                    <span class="eyebrow">07 — Contact</span>
+                    <h2 class="contact__title" id="contact-title">Let's secure <em>something</em> together.</h2>
+                    <p class="contact__lead">Hiring for a SOC or security analyst role, or want to talk threat detection? My inbox is open.</p>
+                    <div class="email-box">
+                        <a class="email-box__addr" href="mailto:matonyando@gmail.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> matonyando@gmail.com</a>
+                        <button class="copy-btn" type="button" data-copy="matonyando@gmail.com"><i class="fa-regular fa-copy" aria-hidden="true"></i> <span>Copy email</span></button>
                     </div>
-                    <span class="badge bg-secondary p-2">July 2026 – Present</span>
                 </div>
-                <ul class="resume-list mt-3">
-                    <li>Monitor the Commission's ICT environment and system logs to identify, document, and escalate potential cyber threats and anomalies</li>
-                    <li>Utilize network diagnostic tools, including Wireshark, to capture and analyze traffic for security incident investigations</li>
-                    <li>Assist in the configuration, documentation, and patch deployment for network infrastructure, servers, and endpoint devices</li>
-                    <li>Provide first-level ICT support to diagnose and resolve hardware, network connectivity, and video conferencing issues</li>
-                    <li>Track and implement corrective actions arising from ICT audit findings to maintain compliance with information security policies</li>
-                    <li>Support the Consumer Division with case documentation, complaint investigations, and regulatory policy research</li>
+
+                <ul class="links">
+                    <li>
+                        <a class="link-row" href="https://www.linkedin.com/in/martin-nyandigisi/" target="_blank" rel="noopener noreferrer">
+                            <span class="link-row__icon" aria-hidden="true"><i class="fa-brands fa-linkedin-in"></i></span>
+                            <span><span class="link-row__label">LinkedIn</span><span class="link-row__value">Martin Nyandigisi</span></span>
+                            <i class="fa-solid fa-arrow-right link-row__arrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link-row" href="https://github.com/mnyando" target="_blank" rel="noopener noreferrer">
+                            <span class="link-row__icon" aria-hidden="true"><i class="fa-brands fa-github"></i></span>
+                            <span><span class="link-row__label">GitHub</span><span class="link-row__value">github.com/mnyando</span></span>
+                            <i class="fa-solid fa-arrow-right link-row__arrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link-row" href="https://twitter.com/Mnyandigisi" target="_blank" rel="noopener noreferrer">
+                            <span class="link-row__icon" aria-hidden="true"><i class="fa-brands fa-x-twitter"></i></span>
+                            <span><span class="link-row__label">Twitter / X</span><span class="link-row__value">@Mnyandigisi</span></span>
+                            <i class="fa-solid fa-arrow-right link-row__arrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link-row" href="tel:+254742846700">
+                            <span class="link-row__icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+                            <span><span class="link-row__label">Phone</span><span class="link-row__value">+254 742 846 700</span></span>
+                            <i class="fa-solid fa-arrow-right link-row__arrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="link-row">
+                            <span class="link-row__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+                            <span><span class="link-row__label">Location</span><span class="link-row__value">Nairobi, Kenya</span></span>
+                        </div>
+                    </li>
                 </ul>
             </div>
-
-            <!-- Job 2 -->
-            <div class="resume-item" id="exp-item-iced">
-                <div class="d-flex justify-content-between align-items-start flex-wrap">
-                    <div>
-                        <h4 class="fw-bold">IT Support Intern</h4>
-                        <h6 class="text-info">ICED – International Centre for Evaluation and Development</h6>
-                    </div>
-                    <span class="badge bg-secondary p-2">April 2026 – July 2026</span>
-                </div>
-                <ul class="resume-list mt-3">
-                    <li>Support day-to-day ICT operations including hardware configuration and asset inventory management</li>
-                    <li>Monitor network connectivity and assist with LAN/Wi-Fi troubleshooting, liaising with service providers</li>
-                    <li>Perform routine server and system monitoring, log reviews, and data backup support</li>
-                    <li>Assist with cybersecurity tasks including antivirus and patch updates, access management, and security incident reporting</li>
-                    <li>Support end-users on Microsoft Office suite, email setup, and internal application issues</li>
-                    <li>Conduct data entry, cleaning, and basic analysis using Excel, preparing reports for programme teams</li>
-                </ul>
-            </div>
-
-            <!-- Job 3 -->
-            <div class="resume-item" id="exp-item-power">
-                <div class="d-flex justify-content-between align-items-start flex-wrap">
-                    <div>
-                        <h4 class="fw-bold">Network Administrator (Part-Time)</h4>
-                        <h6 class="text-info">Power Innovations</h6>
-                    </div>
-                    <span class="badge bg-secondary p-2">October 2025 – February 2026</span>
-                </div>
-                <ul class="resume-list mt-3">
-                    <li>Monitored and maintained company server infrastructure, ensuring stable performance and uptime</li>
-                    <li>Enforced endpoint security hygiene, managing patch deployment, antivirus updates, and OS hardening</li>
-                    <li>Troubleshot network, POS, and hardware issues across company systems to minimise downtime</li>
-                    <li>Diagnosed and resolved POS system failures by retrieving and analysing server-side error logs</li>
-                </ul>
-            </div>
-
-            <!-- Job 4 -->
-            <div class="resume-item" id="exp-item-ict">
-                <div class="d-flex justify-content-between align-items-start flex-wrap">
-                    <div>
-                        <h4 class="fw-bold">Information Security Intern</h4>
-                        <h6 class="text-info">ICT Authority Kenya</h6>
-                    </div>
-                    <span class="badge bg-secondary p-2">May 2025 – July 2025</span>
-                </div>
-                <ul class="resume-list mt-3">
-                    <li>Assisted with vulnerability scanning using Acunetix and monitored security events through Fortinet tools</li>
-                    <li>Supported email threat filtering using SpamTitan and documented security findings for the team</li>
-                    <li>Responded to security incidents, supporting containment and documenting events in real time for audit records</li>
-                    <li>Prepared detailed incident reports covering network issues, attack indicators, and resolutions</li>
-                    <li>Supported NOC troubleshooting of network security issues prior to escalation, reducing resolution time</li>
-                    <li>Created and managed tickets for failed subject links, coordinating with contractors to restore service</li>
-                    <li>Assisted in configuring workstation hardware and software within the Information Security Department</li>
-                </ul>
-            </div>
         </div>
     </div>
 </section>
 
-<!-- EDUCATION SECTION -->
-<section id="education" class="section-box">
-    <div class="container text-center">
-        <h2 class="section-title" id="title-education">Education</h2>
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-8 text-start">
-                <div class="edu-card d-flex align-items-start gap-3" id="edu-card-usiu">
-                    <div class="edu-icon">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <div>
-                        <h4 class="fw-bold">Bachelor of Science in Information Systems & Technology</h4>
-                        <h6 class="text-info">United States International University – Africa</h6>
-                        <p class="mb-2 text-muted"><strong>Concentration:</strong> Forensic Information Technology & Cybercrime</p>
-                        <span class="badge bg-light text-dark border">Graduated: September 2025</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+</main>
 
-<!-- CERTIFICATIONS SECTION -->
-<section id="certifications" class="section-box">
-    <div class="container text-center">
-        <h2 class="section-title" id="title-certs">Certifications</h2>
-        <div class="row mt-4 g-3 justify-content-center text-start" id="certs-grid">
-            <!-- Cert 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cert-card d-flex align-items-center gap-3" id="cert-hcia">
-                    <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <div>
-                        <h6 class="mb-0 fw-bold">HCIA-Security V4.0</h6>
-                        <small class="text-muted">Huawei Technologies</small><br>
-                        <small class="text-muted">Jun 2026</small>
-                    </div>
-                </div>
-            </div>
-            <!-- Cert 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cert-card d-flex align-items-center gap-3" id="cert-cybershujaa">
-                    <div class="cert-icon"><i class="fa-solid fa-user-shield"></i></div>
-                    <div>
-                        <h6 class="mb-0 fw-bold">Security Analyst – CyberShujaa (Cohort XI)</h6>
-                        <small class="text-muted">USIU-Africa, Serianu Ltd & Kenya Bankers Association</small><br>
-                        <small class="text-muted">Apr 2026</small>
-                    </div>
-                </div>
-            </div>
-            <!-- Cert 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cert-card d-flex align-items-center gap-3" id="cert-caisr">
-                    <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
-                    <div>
-                        <h6 class="mb-0 fw-bold">Certified AI Security & Risk (CAISR)</h6>
-                        <small class="text-muted">Red Team Leaders</small><br>
-                        <small class="text-muted">Feb 2026</small>
-                    </div>
-                </div>
-            </div>
-            <!-- Cert 4 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cert-card d-flex align-items-center gap-3" id="cert-google">
-                    <div class="cert-icon"><i class="fa-brands fa-google"></i></div>
-                    <div>
-                        <h6 class="mb-0 fw-bold">Google Cybersecurity Professional Certificate (V2)</h6>
-                        <small class="text-muted">Google</small><br>
-                        <small class="text-muted">Feb 2025</small>
-                    </div>
-                </div>
-            </div>
-            <!-- Cert 5 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cert-card d-flex align-items-center gap-3" id="cert-mitre">
-                    <div class="cert-icon"><i class="fa-solid fa-sitemap"></i></div>
-                    <div>
-                        <h6 class="mb-0 fw-bold">Foundations of Operationalizing MITRE ATT&CK v13</h6>
-                        <small class="text-muted">AttackIQ</small><br>
-                        <small class="text-muted">Feb 2025</small>
-                    </div>
-                </div>
-            </div>
-            <!-- Cert 6 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cert-card d-flex align-items-center gap-3" id="cert-cisco">
-                    <div class="cert-icon"><i class="fa-solid fa-mask"></i></div>
-                    <div>
-                        <h6 class="mb-0 fw-bold">Cisco Ethical Hacker</h6>
-                        <small class="text-muted">Cisco Networking Academy</small><br>
-                        <small class="text-muted">Mar 2025</small>
-                    </div>
-                </div>
-            </div>
-            <!-- Cert 7 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="cert-card d-flex align-items-center gap-3" id="cert-ibm">
-                    <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
-                    <div>
-                        <h6 class="mb-0 fw-bold">Code Generation & Optimization Using IBM Granite</h6>
-                        <small class="text-muted">IBM SkillsBuild</small><br>
-                        <small class="text-muted">Mar 2025</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS SECTION -->
-<section id="projects" class="section-box">
-    <div class="container text-center">
-        <h2 class="section-title" id="title-projects">Projects</h2>
-        <div class="row text-start mt-4 g-4" id="projects-grid">
-            <!-- Project 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="project-card" id="project-card-grocery">
-                    <h5 class="fw-bold"><i class="fa-solid fa-cart-shopping"></i> Mama Mboga (Grocery Shop)</h5>
-                    <p>Premium e-commerce web application built with Flask and Python for sourcing fresh organic vegetables and fruits directly from local farms. Full-stack project with responsive frontend and backend-driven product management.</p>
-                    <div class="project-tech">
-                        <span class="badge bg-secondary">Python</span>
-                        <span class="badge bg-secondary">Flask</span>
-                        <span class="badge bg-secondary">HTML</span>
-                        <span class="badge bg-secondary">JavaScript</span>
-                        <span class="badge bg-secondary">CSS</span>
-                    </div>
-                    <div class="mt-3 d-flex gap-2">
-                        <a href="https://github.com/mnyando/GroceryShop" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
-                            <i class="fa-brands fa-github"></i> Code
-                        </a>
-                        <a href="https://groceryshop-hjxm.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="project-card" id="project-card-car">
-                    <h5 class="fw-bold"><i class="fa-solid fa-car"></i> Car Parts Store</h5>
-                    <p>Minimalist e-commerce storefront specialised for automotive parts, built with a Python-heavy backend and clean product interface.</p>
-                    <div class="project-tech">
-                        <span class="badge bg-secondary">Python</span>
-                        <span class="badge bg-secondary">Flask</span>
-                    </div>
-                    <div class="mt-3 d-flex gap-2">
-                        <a href="https://github.com/mnyando/car-parts" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
-                            <i class="fa-brands fa-github"></i> Code
-                        </a>
-                        <a href="https://car-parts-nq47.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="project-card" id="project-card-transport">
-                    <h5 class="fw-bold"><i class="fa-solid fa-bus"></i> Online School Transport Child Safety System</h5>
-                    <p>Android and Firebase-based transport safety platform enabling schools and parents to monitor student pickup and drop-off activities in real time, with push notification alerts.</p>
-                    <div class="project-tech">
-                        <span class="badge bg-secondary">Java</span>
-                        <span class="badge bg-secondary">Android Studio</span>
-                        <span class="badge bg-secondary">Firebase Authentication</span>
-                        <span class="badge bg-secondary">Firestore</span>
-                        <span class="badge bg-secondary">Firebase Cloud Messaging</span>
-                    </div>
-                    <div class="mt-3 d-flex gap-2">
-                        <a href="https://github.com/mnyando/Transport-App" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
-                            <i class="fa-brands fa-github"></i> Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- LAB CHALLENGES SECTION -->
-<section id="lab-challenges" class="section-box">
-    <div class="container text-center">
-        <h2 class="section-title" id="title-labs">Lab Challenges</h2>
-        <p class="text-muted mb-4">40+ practical labs completed across Hack The Box, TryHackMe, and CyberShujaa</p>
-        <div class="row text-start mt-4 g-4 justify-content-center" id="labs-grid">
-            <!-- Lab 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="lab-card" id="lab-card-1">
-                    <h5 class="fw-bold">Lab 1 — Network Reconnaissance & Enumeration</h5>
-                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
-                    <ul class="lab-activities">
-                        <li>Nmap scanning, service fingerprinting, and open port discovery</li>
-                        <li>Banner grabbing and OS detection</li>
-                        <li>Network mapping and target profiling</li>
-                    </ul>
-                    <div class="mt-auto pt-2">
-                        <span class="badge bg-info text-dark">Nmap</span>
-                        <span class="badge bg-info text-dark">Linux</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Lab 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="lab-card" id="lab-card-2">
-                    <h5 class="fw-bold">Lab 2 — Web Application Security (OWASP Top 10)</h5>
-                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
-                    <ul class="lab-activities">
-                        <li>SQL Injection and XSS fundamentals</li>
-                        <li>Authentication and authorization vulnerability testing</li>
-                        <li>Directory enumeration and web application assessment</li>
-                    </ul>
-                    <div class="mt-auto pt-2">
-                        <span class="badge bg-info text-dark">Burp Suite</span>
-                        <span class="badge bg-info text-dark">Browser Dev Tools</span>
-                        <span class="badge bg-info text-dark">Linux</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Lab 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="lab-card" id="lab-card-3">
-                    <h5 class="fw-bold">Lab 3 — Active Directory Security</h5>
-                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
-                    <ul class="lab-activities">
-                        <li>User and group enumeration</li>
-                        <li>AD attack path analysis</li>
-                        <li>Kerberos fundamentals and Windows domain security</li>
-                    </ul>
-                    <div class="mt-auto pt-2">
-                        <span class="badge bg-info text-dark">BloodHound</span>
-                        <span class="badge bg-info text-dark">PowerShell</span>
-                        <span class="badge bg-info text-dark">Linux</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Lab 4 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="lab-card" id="lab-card-4">
-                    <h5 class="fw-bold">Lab 4 — Linux & Windows Privilege Escalation</h5>
-                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
-                    <ul class="lab-activities">
-                        <li>File permissions and user management exploitation</li>
-                        <li>System enumeration and misconfiguration discovery</li>
-                        <li>Privilege escalation path identification</li>
-                    </ul>
-                    <div class="mt-auto pt-2">
-                        <span class="badge bg-info text-dark">Linux</span>
-                        <span class="badge bg-info text-dark">Windows</span>
-                        <span class="badge bg-info text-dark">GTFOBins</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Lab 5 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="lab-card" id="lab-card-5">
-                    <h5 class="fw-bold">Lab 5 — SOC Operations & Log Analysis</h5>
-                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
-                    <ul class="lab-activities">
-                        <li>Security event monitoring and alert investigation</li>
-                        <li>SIEM fundamentals and threat detection workflows</li>
-                        <li>Incident response triage and documentation</li>
-                    </ul>
-                    <div class="mt-auto pt-2">
-                        <span class="badge bg-info text-dark">FortiSIEM</span>
-                        <span class="badge bg-info text-dark">Splunk</span>
-                        <span class="badge bg-info text-dark">Wazuh</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Lab 6 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="lab-card" id="lab-card-6">
-                    <h5 class="fw-bold">Lab 6 — Network Traffic Analysis</h5>
-                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
-                    <ul class="lab-activities">
-                        <li>Packet capture and protocol dissection</li>
-                        <li>TCP/IP analysis and anomaly detection</li>
-                        <li>Identifying indicators of compromise (IoCs) in simulated attack scenarios</li>
-                    </ul>
-                    <div class="mt-auto pt-2">
-                        <span class="badge bg-info text-dark">Wireshark</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Lab 7 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="lab-card" id="lab-card-7">
-                    <h5 class="fw-bold">Lab 7 — Digital Forensics</h5>
-                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
-                    <ul class="lab-activities">
-                        <li>Evidence collection and artifact extraction</li>
-                        <li>Chain of custody documentation</li>
-                        <li>File system and registry analysis</li>
-                    </ul>
-                    <div class="mt-auto pt-2">
-                        <span class="badge bg-info text-dark">Autopsy</span>
-                        <span class="badge bg-info text-dark">FTK Imager</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Lab 8 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="lab-card" id="lab-card-8">
-                    <h5 class="fw-bold">Lab 8 — SMB Enumeration & Exploitation</h5>
-                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
-                    <ul class="lab-activities">
-                        <li>Share enumeration and file extraction</li>
-                        <li>Credential discovery and access analysis</li>
-                        <li>SMB exploitation techniques</li>
-                    </ul>
-                    <div class="mt-auto pt-2">
-                        <span class="badge bg-info text-dark">smbclient</span>
-                        <span class="badge bg-info text-dark">Nmap</span>
-                        <span class="badge bg-info text-dark">Linux</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Lab 9 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="lab-card" id="lab-card-9">
-                    <h5 class="fw-bold">Lab 9 — Phishing & Email Security</h5>
-                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
-                    <ul class="lab-activities">
-                        <li>Phishing email analysis and header inspection</li>
-                        <li>Spam detection and threat investigation</li>
-                        <li>Email-based attack identification</li>
-                    </ul>
-                    <div class="mt-auto pt-2">
-                        <span class="badge bg-info text-dark">SpamTitan</span>
-                        <span class="badge bg-info text-dark">Email Header Analysis</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Lab 10 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="lab-card" id="lab-card-10">
-                    <h5 class="fw-bold">Lab 10 — CyberShujaa Practical Assessments</h5>
-                    <p class="mb-1 text-muted"><strong>Activities:</strong></p>
-                    <ul class="lab-activities">
-                        <li>Nmap scanning, SSH access, and SMB exploitation</li>
-                        <li>Base64 decoding, hash analysis, and grep searches</li>
-                        <li>File compression/extraction and privilege escalation enumeration</li>
-                    </ul>
-                    <div class="mt-auto pt-2">
-                        <span class="badge bg-info text-dark">Nmap</span>
-                        <span class="badge bg-info text-dark">Linux</span>
-                        <span class="badge bg-info text-dark">SSH</span>
-                        <span class="badge bg-info text-dark">Hashcat</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section id="contact" class="section-box text-center">
-    <div class="container">
-        <h2 class="section-title" id="title-contact">Contact</h2>
-        <div class="row mt-4 g-3 justify-content-center text-center" id="contact-grid">
-            <div class="col-sm-6 col-md-4">
-                <div class="contact-item" id="contact-item-email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h5>Email</h5>
-                    <a href="mailto:matonyando@gmail.com">matonyando@gmail.com</a>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="contact-item" id="contact-item-phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <h5>Phone</h5>
-                    <a href="tel:+254742846700">+254 742 846 700</a>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="contact-item" id="contact-item-location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h5>Location</h5>
-                    <span class="text-muted">Nairobi, Kenya</span>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="contact-item" id="contact-item-linkedin">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <h5>LinkedIn</h5>
-                    <a href="https://www.linkedin.com/in/martin-nyandigisi/" target="_blank" rel="noopener noreferrer">Martin Nyandigisi</a>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="contact-item" id="contact-item-github">
-                    <i class="fa-brands fa-github"></i>
-                    <h5>GitHub</h5>
-                    <a href="https://github.com/mnyando" target="_blank" rel="noopener noreferrer">github.com/mnyando</a>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="contact-item" id="contact-item-twitter">
-                    <i class="fa-brands fa-x-twitter"></i>
-                    <h5>Twitter / X</h5>
-                    <a href="https://twitter.com/Mnyandigisi" target="_blank" rel="noopener noreferrer">@Mnyandigisi</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer" id="main-footer">
-    <div class="container">
-        <p>&copy; 2026 Martin Nyandigisi Mylles. All Rights Reserved.</p>
+<footer class="footer">
+    <div class="container footer__inner">
+        <p>&copy; <span id="year">2026</span> Martin Nyandigisi Mylles</p>
+        <p><span class="status-dot" aria-hidden="true" style="margin-right:8px"></span>All systems nominal</p>
+        <a class="footer__top" href="#home">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
     </div>
 </footer>
 
-<!-- Bootstrap Bundle with Popper JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Custom JS -->
-<script src="script.js"></script>
+<div class="toast" role="status" aria-live="polite" id="toast"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> <span>Email copied to clipboard</span></div>
 
+<script src="script.js" defer></script>
 </body>
 </html>
