@@ -13,7 +13,7 @@
   const themeMeta = $('meta[name="theme-color"]');
   const syncTheme = () => {
     const light = root.getAttribute('data-theme') === 'light';
-    themeBtn.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
+    themeBtn.setAttribute('aria-label', light ? 'Light mode, switch to dark theme' : 'Dark mode, switch to light theme');
     if (themeMeta) themeMeta.setAttribute('content', light ? '#f6f8fb' : '#06080c');
     window.dispatchEvent(new Event('themechange'));
   };
